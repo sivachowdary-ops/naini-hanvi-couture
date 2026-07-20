@@ -63,7 +63,17 @@ export function PDPContent({ product }: PDPContentProps) {
     `Hi! I'm interested in this product: ${product.name} (₹${product.price.toLocaleString()}). Can you share more details?`
   )}`;
 
-  const relatedProducts = MOCK_PRODUCTS.filter((p) => p.id !== product.id);
+  const relatedProducts = (() => {
+    const sameCategory = MOCK_PRODUCTS.filter(
+      (p) => p.id !== product.id && p.category === product.category
+    );
+    if (sameCategory.length >= 4) return sameCategory.slice(0, 4);
+    // Fill with other products if not enough in same category
+    const others = MOCK_PRODUCTS.filter(
+      (p) => p.id !== product.id && p.category !== product.category
+    );
+    return [...sameCategory, ...others].slice(0, 4);
+  })();
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);

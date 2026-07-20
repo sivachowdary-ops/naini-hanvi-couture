@@ -1,5 +1,6 @@
 {
-  "generatedAt": "2026-07-20T14:12:25.324Z",
+  "generatedAt": "2026-07-20T15:23:45.128Z",
+  "consolidatedFrom": "C:\\Users\\sivap\\OneDrive\\Documents\\Desktop\\hanvi-couture\\catalog-ingestion-manifest.json",
   "categories": [
     {
       "category": "Malai Cottons",
@@ -439,12 +440,6 @@
           "src": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
           "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
           "alt": "Malai Cottons Saree 01 - View 2"
-        },
-        {
-          "type": "video",
-          "src": "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4",
-          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-poster.webp",
-          "alt": "Malai Cottons Saree 01 - Video"
         }
       ],
       "variants": [],
@@ -457,7 +452,7 @@
         "IMG_5807.HEIC: score 0.786 (res: 3212x5712)",
         "IMG_5808.HEIC: score 0.783 (res: 3212x5712)"
       ],
-      "matchedVideo": "IMG_5827.MOV (4.4s)"
+      "matchedVideo": null
     },
     {
       "id": "prod-2",
@@ -1707,10 +1702,5 @@
       ],
       "matchedVideo": null
     }
-  ],
-  "summary": {
-    "totalProducts": 39,
-    "totalImages": 41,
-    "totalVideos": 5
-  }
+  ]
 }

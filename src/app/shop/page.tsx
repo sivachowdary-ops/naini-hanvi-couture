@@ -1,5 +1,6 @@
 import { getProducts } from "@/lib/products";
 import { Metadata } from "next";
+import { Suspense } from "react";
 import { ShopContent } from "./ShopContent";
 
 export const metadata: Metadata = {
@@ -16,5 +17,13 @@ export const metadata: Metadata = {
 export default async function ShopPage() {
   const products = await getProducts();
 
-  return <ShopContent initialProducts={products} />;
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-cream-base flex items-center justify-center">
+        <p className="font-serif text-charcoal-text animate-pulse">Loading Collection...</p>
+      </div>
+    }>
+      <ShopContent initialProducts={products} />
+    </Suspense>
+  );
 }

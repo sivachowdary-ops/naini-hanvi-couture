@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const PROJECT_ROOT = process.cwd();
-const MANIFEST_PATH = join(PROJECT_ROOT, "catalog-ingestion-manifest.json");
+const MANIFEST_PATH = join(PROJECT_ROOT, "catalog-consolidated-manifest.json");
 const SQL_OUTPUT_PATH = join(PROJECT_ROOT, "supabase_insert_products.sql");
 
 function escapeSqlString(str) {

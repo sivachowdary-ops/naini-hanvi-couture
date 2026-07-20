@@ -34,10 +34,10 @@ const FAQ_PREVIEW = [
 ];
 
 const SHOWCASE_VIDEOS = [
-  { src: "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-01-poster.webp", label: "Malai Cotton Showcase 1" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp", label: "Malai Cotton Showcase 2" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp", label: "Malai Cotton Showcase 3" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp", label: "Malai Cotton Showcase 4" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp", label: "Malai Cotton Showcase 1" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp", label: "Malai Cotton Showcase 2" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp", label: "Malai Cotton Showcase 3" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-05-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-05-poster.webp", label: "Malai Cotton Showcase 4" },
 ];
 
 const CATEGORY_TILES = [

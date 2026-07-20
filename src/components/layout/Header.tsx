@@ -18,8 +18,17 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -33,7 +42,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300 will-change-[transform,opacity]">
       <div className="bg-rose-deep text-cream-base text-xs font-semibold tracking-wider py-2 overflow-hidden relative w-full">
         <div className="whitespace-nowrap animate-marquee inline-block w-full">
           {ANNOUNCEMENTS.map((msg, i) => (
@@ -47,8 +56,8 @@ export function Header() {
 
       {/* Main Header */}
       <div className={cn(
-        "bg-cream-base/95 backdrop-blur-md border-b border-cream-alt transition-all duration-300",
-        isScrolled ? "py-3" : "py-5"
+        "bg-cream-base/95 backdrop-blur-md border-b border-cream-alt transition-all duration-300 py-3.5",
+        isScrolled ? "shadow-sm bg-cream-base/98" : ""
       )}>
         <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
           

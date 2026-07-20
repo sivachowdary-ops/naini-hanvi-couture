@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const PROJECT_ROOT = process.cwd();
-const MANIFEST_PATH = join(PROJECT_ROOT, "catalog-ingestion-manifest.json");
+const MANIFEST_PATH = join(PROJECT_ROOT, "catalog-consolidated-manifest.json");
 const PRODUCTS_TS_PATH = join(PROJECT_ROOT, "src", "lib", "products.ts");
 
 function run() {

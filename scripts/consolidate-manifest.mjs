@@ -1,8 +1,13 @@
 /**
  * Catalog Manifest Consolidator
  * 
- * Consolidates the 39 ingested products into 15 grouped products based on the
- * client's instructions.
+ * Reads the RAW catalog-ingestion-manifest.json and writes a consolidated
+ * version to catalog-consolidated-manifest.json.
+ * 
+ * Key changes from raw:
+ *   - Moves video from Saree 01 to Saree 05 (as per client instruction)
+ *   - Renames categories for display friendliness
+ *   - NEVER overwrites the raw manifest
  * 
  * Usage: node scripts/consolidate-manifest.mjs
  */
@@ -11,256 +16,84 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const PROJECT_ROOT = process.cwd();
-const MANIFEST_PATH = join(PROJECT_ROOT, "catalog-ingestion-manifest.json");
+const RAW_MANIFEST_PATH = join(PROJECT_ROOT, "catalog-ingestion-manifest.json");
+const CONSOLIDATED_PATH = join(PROJECT_ROOT, "catalog-consolidated-manifest.json");
 
-// Define groups
-const groups = [
-  // Malai Cottons
-  {
-    newId: "prod-1",
-    name: "Malai Cottons Saree 01",
-    slug: "malai-cottons-saree-01",
-    category: "Malai Cottons",
-    oldIds: ["prod-1", "prod-2", "prod-3", "prod-4", "prod-5"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-2",
-    name: "Malai Cottons Saree 02",
-    slug: "malai-cottons-saree-02",
-    category: "Malai Cottons",
-    oldIds: ["prod-6", "prod-7"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-3",
-    name: "Malai Cottons Saree 03",
-    slug: "malai-cottons-saree-03",
-    category: "Malai Cottons",
-    oldIds: ["prod-8", "prod-9"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-4",
-    name: "Malai Cottons Saree 04",
-    slug: "malai-cottons-saree-04",
-    category: "Malai Cottons",
-    oldIds: ["prod-10", "prod-11"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-5",
-    name: "Malai Cottons Saree 05",
-    slug: "malai-cottons-saree-05",
-    category: "Malai Cottons",
-    oldIds: ["prod-12", "prod-13"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-6",
-    name: "Malai Cottons Saree 06",
-    slug: "malai-cottons-saree-06",
-    category: "Malai Cottons",
-    oldIds: ["prod-14", "prod-15"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-7",
-    name: "Malai Cottons Saree 07",
-    slug: "malai-cottons-saree-07",
-    category: "Malai Cottons",
-    oldIds: ["prod-16", "prod-17"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-8",
-    name: "Malai Cottons Saree 08",
-    slug: "malai-cottons-saree-08",
-    category: "Malai Cottons",
-    oldIds: ["prod-18", "prod-19"],
-    maxImages: 2
-  },
-  // Muslin Sequence
-  {
-    newId: "prod-9",
-    name: "Muslin Sequence Saree 01",
-    slug: "muslin-sequence-saree-01",
-    category: "Muslin Sequence",
-    oldIds: ["prod-20", "prod-21", "prod-22"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-10",
-    name: "Muslin Sequence Saree 02",
-    slug: "muslin-sequence-saree-02",
-    category: "Muslin Sequence",
-    oldIds: ["prod-23", "prod-24", "prod-25"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-11",
-    name: "Muslin Sequence Saree 03",
-    slug: "muslin-sequence-saree-03",
-    category: "Muslin Sequence",
-    oldIds: ["prod-26", "prod-27", "prod-28"],
-    maxImages: 2
-  },
-  // Silk Kota
-  {
-    newId: "prod-12",
-    name: "Silk Kota Saree 01",
-    slug: "silk-kota-saree-01",
-    category: "Silk Kota",
-    oldIds: ["prod-29", "prod-30", "prod-31"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-13",
-    name: "Silk Kota Saree 02",
-    slug: "silk-kota-saree-02",
-    category: "Silk Kota",
-    oldIds: ["prod-32", "prod-33", "prod-34"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-14",
-    name: "Silk Kota Saree 03",
-    slug: "silk-kota-saree-03",
-    category: "Silk Kota",
-    oldIds: ["prod-35", "prod-36", "prod-37"],
-    maxImages: 2
-  },
-  {
-    newId: "prod-15",
-    name: "Silk Kota Saree 04",
-    slug: "silk-kota-saree-04",
-    category: "Silk Kota",
-    oldIds: ["prod-38", "prod-39"],
-    maxImages: 2
-  }
-];
+// Display-friendly category names
+const CATEGORY_DISPLAY = {
+  "Malai Cottons": "Malai Cottons",
+  "Muslin Sequence": "Muslin Sequence",
+  "Silk Kota": "Silk Kota",
+};
 
 function run() {
   console.log("\n🔄 Consolidating catalog manifest...");
+  console.log(`   Reading from: ${RAW_MANIFEST_PATH}`);
+  console.log(`   Writing to:   ${CONSOLIDATED_PATH}`);
 
   let manifestData;
   try {
-    manifestData = JSON.parse(readFileSync(MANIFEST_PATH, "utf8"));
+    manifestData = JSON.parse(readFileSync(RAW_MANIFEST_PATH, "utf8"));
   } catch (err) {
-    console.error(`✗ Failed to read manifest file: ${err.message}`);
+    console.error(`✗ Failed to read raw manifest: ${err.message}`);
     process.exit(1);
   }
 
-  const oldProducts = manifestData.products;
-  const newProducts = [];
-
-  for (const group of groups) {
-    // Find all matching old products
-    const matchedProducts = oldProducts.filter(p => group.oldIds.includes(p.id));
-    if (matchedProducts.length === 0) {
-      console.warn(`⚠️ Warning: No products found for group ${group.name} (${group.oldIds.join(",")})`);
-      continue;
-    }
-
-    // Base properties from the first matched product
-    const base = matchedProducts[0];
-
-    // Combine gallery items (images and videos)
-    const combinedGallery = [];
-    const imagesOnly = [];
-    const videosOnly = [];
-
-    for (const p of matchedProducts) {
-      for (const item of p.gallery) {
-        if (item.type === "image") {
-          imagesOnly.push(item);
-        } else if (item.type === "video") {
-          videosOnly.push(item);
-        }
-      }
-    }
-
-    // De-duplicate images based on src
-    const uniqueImages = [];
-    const imageSrcs = new Set();
-    for (const img of imagesOnly) {
-      if (!imageSrcs.has(img.src)) {
-        imageSrcs.add(img.src);
-        uniqueImages.push(img);
-      }
-    }
-
-    // De-duplicate videos based on src
-    const uniqueVideos = [];
-    const videoSrcs = new Set();
-    for (const vid of videosOnly) {
-      if (!videoSrcs.has(vid.src)) {
-        videoSrcs.add(vid.src);
-        uniqueVideos.push(vid);
-      }
-    }
-
-    // Select up to maxImages
-    const selectedImages = uniqueImages.slice(0, group.maxImages);
-
-    // Update their image alt texts to use the new name
-    selectedImages.forEach((img, idx) => {
-      img.alt = `${group.name} - View ${idx + 1}`;
-    });
-
-    // Assemble gallery: Images first, then videos
-    combinedGallery.push(...selectedImages);
-    
-    // Limit to 1 video max if exists
-    if (uniqueVideos.length > 0) {
-      const vid = uniqueVideos[0];
-      vid.alt = `${group.name} - Video`;
-      combinedGallery.push(vid);
-    }
-
-    // Combine source files metadata
-    const sourceFiles = [];
-    const selectionReason = [];
-    let matchedVideo = null;
-
-    for (const p of matchedProducts) {
-      if (p.sourceFiles) sourceFiles.push(...p.sourceFiles);
-      if (p.selectionReason) selectionReason.push(...p.selectionReason);
-      if (p.matchedVideo && !matchedVideo) matchedVideo = p.matchedVideo;
-    }
-
-    // Create consolidated product
-    const consolidatedProduct = {
-      id: group.newId,
-      slug: group.slug,
-      name: group.name,
-      brand: "Naini Hanvi Couture",
-      category: group.category,
-      price: base.price,
-      inStock: base.inStock,
-      isBestSeller: matchedProducts.some(p => p.isBestSeller),
-      badge: base.badge,
-      fabric: base.fabric,
-      lengthWidth: base.lengthWidth,
-      blouseDetail: base.blouseDetail,
-      description: `A beautiful ${group.category} saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.`,
-      gallery: combinedGallery,
-      variants: [],
-      tags: base.tags || [],
-      sourceFiles: [...new Set(sourceFiles)],
-      selectionReason: [...new Set(selectionReason)],
-      matchedVideo: matchedVideo
-    };
-
-    newProducts.push(consolidatedProduct);
+  const rawProducts = manifestData.products;
+  if (!rawProducts || rawProducts.length === 0) {
+    console.error("✗ No products found in raw manifest");
+    process.exit(1);
   }
 
-  // Update manifest structure
-  manifestData.products = newProducts;
-  manifestData.generatedAt = new Date().toISOString();
+  console.log(`   Found ${rawProducts.length} raw products`);
 
-  writeFileSync(MANIFEST_PATH, JSON.stringify(manifestData, null, 2), "utf8");
-  console.log(`✓ successfully consolidated into ${newProducts.length} products in catalog-ingestion-manifest.json`);
+  // Deep clone so we don't mutate the original
+  const products = JSON.parse(JSON.stringify(rawProducts));
+
+  // === Apply client-requested changes ===
+
+  // 1. Move video from Malai Cottons Saree 01 to Malai Cottons Saree 05
+  const saree01 = products.find(p => p.slug === "malai-cottons-saree-01");
+  const saree05 = products.find(p => p.slug === "malai-cottons-saree-05");
+
+  if (saree01 && saree05) {
+    // Extract video from saree 01
+    const videoItem = saree01.gallery.find(g => g.type === "video");
+    if (videoItem) {
+      // Remove video from saree 01
+      saree01.gallery = saree01.gallery.filter(g => g.type !== "video");
+      saree01.matchedVideo = null;
+
+      // Add video to saree 05 (if not already there)
+      const existingVideo = saree05.gallery.find(g => g.type === "video");
+      if (!existingVideo) {
+        saree05.gallery.push({
+          ...videoItem,
+          alt: `${saree05.name} - Video`,
+        });
+        saree05.matchedVideo = saree01.matchedVideo || videoItem.src;
+      }
+      console.log(`   ✓ Moved video from Saree 01 → Saree 05`);
+    }
+  }
+
+  // 2. Apply display-friendly category names
+  for (const p of products) {
+    if (CATEGORY_DISPLAY[p.category]) {
+      p.category = CATEGORY_DISPLAY[p.category];
+    }
+  }
+
+  // Build output
+  const consolidated = {
+    generatedAt: new Date().toISOString(),
+    consolidatedFrom: RAW_MANIFEST_PATH,
+    categories: manifestData.categories,
+    products: products,
+  };
+
+  writeFileSync(CONSOLIDATED_PATH, JSON.stringify(consolidated, null, 2), "utf8");
+  console.log(`\n✓ Successfully consolidated ${products.length} products → ${CONSOLIDATED_PATH}`);
 }
 
 run();

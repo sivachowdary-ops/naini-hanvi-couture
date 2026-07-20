@@ -47,3 +47,6 @@ next-env.d.ts
 /Muslin sequence-20260720T093241Z-1-001/
 /Silk kota-20260720T093241Z-1-001/
 /raw_assets/
+
+public/catalog/_tmp/
+catalog-ingestion-manifest-raw.json

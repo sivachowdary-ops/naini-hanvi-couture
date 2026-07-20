@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useState, useMemo, useEffect } from "react";
 import { Product } from "@/lib/products";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { SlidersHorizontal, X } from "lucide-react";
@@ -13,9 +14,33 @@ interface ShopContentProps {
 type SortOption = "newest" | "price-asc" | "price-desc";
 
 export function ShopContent({ initialProducts }: ShopContentProps) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const categoryQuery = searchParams.get("category");
+
   const [sortBy, setSortBy] = useState<SortOption>("newest");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [showFilters, setShowFilters] = useState(false);
+
+  // Sync category state with URL parameter
+  useEffect(() => {
+    if (categoryQuery) {
+      setSelectedCategory(categoryQuery);
+    } else {
+      setSelectedCategory("all");
+    }
+  }, [categoryQuery]);
+
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+    const params = new URLSearchParams(searchParams.toString());
+    if (category === "all") {
+      params.delete("category");
+    } else {
+      params.set("category", category);
+    }
+    router.push(`/shop?${params.toString()}`, { scroll: false });
+  };
 
   const categories = useMemo(() => {
     const cats = new Set(initialProducts.map((p) => p.category));
@@ -76,7 +101,7 @@ export function ShopContent({ initialProducts }: ShopContentProps) {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => handleCategorySelect(cat)}
                 className={cn(
                   "px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200",
                   selectedCategory === cat
@@ -130,7 +155,7 @@ export function ShopContent({ initialProducts }: ShopContentProps) {
                 <button
                   key={cat}
                   onClick={() => {
-                    setSelectedCategory(cat);
+                    handleCategorySelect(cat);
                     setShowFilters(false);
                   }}
                   className={cn(

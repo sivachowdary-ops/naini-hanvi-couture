@@ -16,6 +16,8 @@ export function MediaGallery({ items }: MediaGalleryProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  // Track which indices have been visited for lazy mounting
+  const [visited, setVisited] = useState<Set<number>>(new Set([0]));
 
   const activeItem = items[activeIndex];
 
@@ -38,6 +40,14 @@ export function MediaGallery({ items }: MediaGalleryProps) {
     (index: number) => {
       if (index >= 0 && index < items.length) {
         setActiveIndex(index);
+        setVisited(prev => {
+          const next = new Set(prev);
+          next.add(index);
+          // Pre-mount adjacent slides
+          if (index + 1 < items.length) next.add(index + 1);
+          if (index - 1 >= 0) next.add(index - 1);
+          return next;
+        });
       }
     },
     [items.length]
@@ -45,6 +55,18 @@ export function MediaGallery({ items }: MediaGalleryProps) {
 
   const goNext = useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
   const goPrev = useCallback(() => goTo(activeIndex - 1), [activeIndex, goTo]);
+
+  // Pre-mount adjacent slides on initial load
+  useEffect(() => {
+    if (items.length > 1) {
+      setVisited(prev => {
+        const next = new Set(prev);
+        next.add(0);
+        next.add(1);
+        return next;
+      });
+    }
+  }, [items.length]);
 
   // Swipe handling
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -107,41 +129,66 @@ export function MediaGallery({ items }: MediaGalleryProps) {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {activeItem.type === "image" ? (
-          <Image
-            src={activeItem.src}
-            alt={activeItem.alt || "Product image"}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority={activeIndex === 0}
-          />
-        ) : (
-          <div className="relative w-full h-full">
-            <video
-              ref={videoRef}
-              src={activeItem.src}
-              poster={activeItem.thumbnail}
-              loop
-              playsInline
-              muted={isMuted}
-              className="w-full h-full object-cover"
-            />
-            {/* Mute/Unmute */}
-            <button
-              onClick={() => setIsMuted(!isMuted)}
-              className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-black/70 transition-colors z-10"
-            >
-              {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-            </button>
-          </div>
-        )}
+        {items.map((item, idx) => {
+          // Only mount visited slides (lazy loading)
+          if (!visited.has(idx)) return null;
+
+          if (item.type === "image") {
+            return (
+              <div
+                key={idx}
+                className={cn(
+                  "absolute inset-0 transition-opacity duration-200 ease-out",
+                  activeIndex === idx ? "opacity-100 z-10" : "opacity-0 z-0"
+                )}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt || "Product image"}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority={idx === 0}
+                  loading={idx <= 1 ? "eager" : "lazy"}
+                />
+              </div>
+            );
+          } else {
+            return (
+              <div
+                key={idx}
+                className={cn(
+                  "absolute inset-0 transition-opacity duration-200 ease-out",
+                  activeIndex === idx ? "opacity-100 z-10" : "opacity-0 z-0"
+                )}
+              >
+                <video
+                  ref={activeIndex === idx ? videoRef : null}
+                  src={item.src}
+                  poster={item.thumbnail}
+                  loop
+                  playsInline
+                  muted={isMuted}
+                  preload={activeIndex === idx ? "auto" : "none"}
+                  className="w-full h-full object-cover"
+                />
+                {/* Mute/Unmute */}
+                <button
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-black/70 transition-colors z-10"
+                >
+                  {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                </button>
+              </div>
+            );
+          }
+        })}
 
         {/* Arrow Navigation */}
         {activeIndex > 0 && (
           <button
             onClick={goPrev}
-            className="absolute left-3 top-1/2 -translate-y-1/2 bg-cream-base/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-cream-base transition-colors z-10 hidden lg:flex items-center justify-center"
+            className="absolute left-3 top-1/2 -translate-y-1/2 bg-cream-base/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-cream-base transition-colors z-20 hidden lg:flex items-center justify-center"
           >
             <ChevronLeft size={20} className="text-charcoal-text" />
           </button>
@@ -149,14 +196,14 @@ export function MediaGallery({ items }: MediaGalleryProps) {
         {activeIndex < items.length - 1 && (
           <button
             onClick={goNext}
-            className="absolute right-3 top-1/2 -translate-y-1/2 bg-cream-base/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-cream-base transition-colors z-10 hidden lg:flex items-center justify-center"
+            className="absolute right-3 top-1/2 -translate-y-1/2 bg-cream-base/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-cream-base transition-colors z-20 hidden lg:flex items-center justify-center"
           >
             <ChevronRight size={20} className="text-charcoal-text" />
           </button>
         )}
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full z-10">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full z-20">
           {items.map((_, idx) => (
             <button
               key={idx}
