@@ -1,0 +1,20 @@
+# Ignore raw large folders in Vercel deploy
+Malai cottons-20260720T093242Z-1-001/
+Muslin sequence-20260720T093241Z-1-001/
+Silk kota-20260720T093241Z-1-001/
+raw_assets/
+
+# Ignore script dependencies
+scripts/node_modules/
+node_modules/
+
+# Ignore local build caches
+.next/
+.vercel/
+out/
+build/
+coverage/
+.DS_Store
+*.pem
+*.log
+*.tsbuildinfo
