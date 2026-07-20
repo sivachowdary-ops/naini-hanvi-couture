@@ -5,9 +5,10 @@ import { ShoppingBag } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
+  priority?: boolean;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, priority = false }: ProductCardProps) {
   // Find primary image and secondary image if available
   const images = product.gallery.filter((g) => g.type === "image");
   const primaryImage = images[0]?.src || "/placeholder.jpg";
@@ -35,6 +36,7 @@ export function ProductCard({ product }: ProductCardProps) {
           src={primaryImage}
           alt={product.name}
           fill
+          priority={priority}
           className="object-cover transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"
           sizes="(max-width: 768px) 50vw, 25vw"
         />

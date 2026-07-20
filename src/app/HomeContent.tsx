@@ -163,6 +163,7 @@ export function HomeContent({ products }: { products: Product[] }) {
                       src={tile.image}
                       alt={tile.name}
                       fill
+                      priority={true}
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                       sizes="128px"
                     />
@@ -211,9 +212,9 @@ export function HomeContent({ products }: { products: Product[] }) {
             </Link>
           </div>
           <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible">
-            {products.map((product) => (
+            {products.map((product, i) => (
               <div key={product.id} className="shrink-0 w-[260px] lg:w-full snap-start">
-                <ProductCard product={product} />
+                <ProductCard product={product} priority={i < 4} />
               </div>
             ))}
           </div>
