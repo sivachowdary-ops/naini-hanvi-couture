@@ -34,17 +34,16 @@ const FAQ_PREVIEW = [
 ];
 
 const SHOWCASE_VIDEOS = [
-  { src: "/assets/vid1.mp4", thumb: "/assets/vid1-thumb.webp", label: "Festive Elegance" },
-  { src: "/assets/vid2.mp4", thumb: "/assets/vid2-thumb.webp", label: "Draped in Grace" },
-  { src: "/assets/vid3.mp4", thumb: "/assets/vid3-thumb.webp", label: "Wedding Ready" },
-  { src: "/assets/vid4.mp4", thumb: "/assets/vid4-thumb.webp", label: "Everyday Luxury" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-01-poster.webp", label: "Malai Cotton Showcase 1" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp", label: "Malai Cotton Showcase 2" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp", label: "Malai Cotton Showcase 3" },
+  { src: "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp", label: "Malai Cotton Showcase 4" },
 ];
 
 const CATEGORY_TILES = [
-  { name: "New Arrivals", href: "/shop?category=new-arrivals", image: "/assets/saree-1.webp" },
-  { name: "Party Wear", href: "/shop?category=party-wear", image: "/assets/saree-2.webp" },
-  { name: "Bestsellers", href: "/shop?category=bestsellers", image: "/assets/hero-banner.png" },
-  { name: "Silk Sarees", href: "/shop?category=silk", image: "/assets/saree-1-img2.webp" },
+  { name: "Malai Cotton Sarees", href: "/shop?category=Malai+Cottons", image: "/catalog/malai-cottons/malai-cottons-saree-01-img1.webp" },
+  { name: "Muslin Sequence Sarees", href: "/shop?category=Muslin+Sequence", image: "/catalog/muslin-sequence/muslin-sequence-saree-20-img1.webp" },
+  { name: "Silk Kota Sarees", href: "/shop?category=Silk+Kota", image: "/catalog/silk-kota/silk-kota-saree-29-img1.webp" },
 ];
 
 function VideoCard({ src, thumb, label }: { src: string; thumb: string; label: string }) {
