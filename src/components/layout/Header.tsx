@@ -42,7 +42,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300 will-change-[transform,opacity]">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300">
       <div className="bg-rose-deep text-cream-base text-xs font-semibold tracking-wider py-2 overflow-hidden relative w-full">
         <div className="whitespace-nowrap animate-marquee inline-block w-full">
           {ANNOUNCEMENTS.map((msg, i) => (
