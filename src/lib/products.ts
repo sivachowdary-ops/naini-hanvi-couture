@@ -128,6 +128,12 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-07-img1.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-07-img1.webp",
         "alt": "Malai Cottons Saree 02 - View 2"
+      },
+      {
+        "type": "video",
+        "src": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4",
+        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp",
+        "alt": "Malai Cottons Saree 02 - Video"
       }
     ],
     "variants": [],
@@ -140,7 +146,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5819.HEIC: score 0.774 (res: 3212x5712)",
       "IMG_5820.HEIC: score 0.536 (res: 2268x4032)"
     ],
-    "matchedVideo": null
+    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4"
   },
   {
     "id": "prod-3",
@@ -208,6 +214,12 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-11-img1.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-11-img1.webp",
         "alt": "Malai Cottons Saree 04 - View 2"
+      },
+      {
+        "type": "video",
+        "src": "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4",
+        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp",
+        "alt": "Malai Cottons Saree 04 - Video"
       }
     ],
     "variants": [],
@@ -220,7 +232,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5823.HEIC: score 0.783 (res: 3212x5712)",
       "IMG_5824.HEIC: score 0.540 (res: 2268x4032)"
     ],
-    "matchedVideo": null
+    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4"
   },
   {
     "id": "prod-5",
@@ -294,6 +306,12 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
         "alt": "Malai Cottons Saree 06 - View 2"
+      },
+      {
+        "type": "video",
+        "src": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
+        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp",
+        "alt": "Malai Cottons Saree 06 - Video"
       }
     ],
     "variants": [],
@@ -306,7 +324,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5829.HEIC: score 0.780 (res: 3212x5712)",
       "IMG_5830.HEIC: score 0.773 (res: 3212x5712)"
     ],
-    "matchedVideo": null
+    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4"
   },
   {
     "id": "prod-7",

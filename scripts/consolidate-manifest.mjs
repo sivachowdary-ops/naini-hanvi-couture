@@ -141,6 +141,26 @@ const groups = [
   }
 ];
 
+// Explicitly assign videos to groups based on user request
+const explicitVideoMapping = {
+  "malai-cottons-saree-02": {
+    src: "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4",
+    thumbnail: "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp"
+  },
+  "malai-cottons-saree-04": {
+    src: "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4",
+    thumbnail: "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp"
+  },
+  "malai-cottons-saree-05": {
+    src: "/catalog/malai-cottons/malai-cottons-saree-05-video.mp4",
+    thumbnail: "/catalog/malai-cottons/malai-cottons-saree-05-poster.webp"
+  },
+  "malai-cottons-saree-06": {
+    src: "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
+    thumbnail: "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp"
+  }
+};
+
 function run() {
   console.log("\n🔄 Consolidating catalog manifest...");
 
@@ -154,7 +174,6 @@ function run() {
 
   const oldProducts = manifestData.products;
   const newProducts = [];
-  let videoItemToMove = null;
 
   for (const group of groups) {
     // Find all matching old products
@@ -167,17 +186,14 @@ function run() {
     // Base properties from the first matched product
     const base = matchedProducts[0];
 
-    // Combine gallery items (images and videos)
+    // Combine gallery items (images only)
     const combinedGallery = [];
     const imagesOnly = [];
-    const videosOnly = [];
 
     for (const p of matchedProducts) {
       for (const item of p.gallery) {
         if (item.type === "image") {
           imagesOnly.push(item);
-        } else if (item.type === "video") {
-          videosOnly.push(item);
         }
       }
     }
@@ -192,16 +208,6 @@ function run() {
       }
     }
 
-    // De-duplicate videos based on src
-    const uniqueVideos = [];
-    const videoSrcs = new Set();
-    for (const vid of videosOnly) {
-      if (!videoSrcs.has(vid.src)) {
-        videoSrcs.add(vid.src);
-        uniqueVideos.push(vid);
-      }
-    }
-
     // Select up to maxImages
     const selectedImages = uniqueImages.slice(0, group.maxImages);
 
@@ -210,40 +216,30 @@ function run() {
       img.alt = `${group.name} - View ${idx + 1}`;
     });
 
-    // Assemble gallery: Images first, then videos
+    // Assemble gallery: Images first
     combinedGallery.push(...selectedImages);
     
-    // Client Request: Move Saree 1 video to Saree 5
-    // If we are on Saree 1, capture its video but do NOT push it to gallery.
-    if (group.slug === "malai-cottons-saree-01" && uniqueVideos.length > 0) {
-      videoItemToMove = uniqueVideos[0];
-    } else if (group.slug === "malai-cottons-saree-05" && videoItemToMove) {
-      // If we are on Saree 5 and have a video to move, attach it.
-      videoItemToMove.alt = `${group.name} - Video`;
-      // Actually we already copied the file on disk to saree-05 path, so update the URLs
-      videoItemToMove.src = videoItemToMove.src.replace("saree-01", "saree-05");
-      videoItemToMove.thumbnail = videoItemToMove.thumbnail.replace("saree-01", "saree-05");
-      combinedGallery.push(videoItemToMove);
-    } else if (uniqueVideos.length > 0) {
-      // Normal behavior for other sarees
-      const vid = uniqueVideos[0];
-      vid.alt = `${group.name} - Video`;
-      combinedGallery.push(vid);
+    // Explicit Video Assignment
+    let matchedVideo = null;
+    if (explicitVideoMapping[group.slug]) {
+      const vidInfo = explicitVideoMapping[group.slug];
+      combinedGallery.push({
+        type: "video",
+        src: vidInfo.src,
+        thumbnail: vidInfo.thumbnail,
+        alt: `${group.name} - Video`
+      });
+      matchedVideo = vidInfo.src;
     }
 
     // Combine source files metadata
     const sourceFiles = [];
     const selectionReason = [];
-    let matchedVideo = null;
 
     for (const p of matchedProducts) {
       if (p.sourceFiles) sourceFiles.push(...p.sourceFiles);
       if (p.selectionReason) selectionReason.push(...p.selectionReason);
-      if (p.matchedVideo && !matchedVideo) matchedVideo = p.matchedVideo;
     }
-    
-    if (group.slug === "malai-cottons-saree-01") matchedVideo = null;
-    if (group.slug === "malai-cottons-saree-05" && videoItemToMove) matchedVideo = videoItemToMove.src;
 
     // Create consolidated product
     const consolidatedProduct = {

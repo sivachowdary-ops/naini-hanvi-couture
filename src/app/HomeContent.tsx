@@ -33,12 +33,7 @@ const FAQ_PREVIEW = [
   },
 ];
 
-const SHOWCASE_VIDEOS = [
-  { src: "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp", label: "Malai Cotton Showcase 1" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp", label: "Malai Cotton Showcase 2" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp", label: "Malai Cotton Showcase 3" },
-  { src: "/catalog/malai-cottons/malai-cottons-saree-05-video.mp4", thumb: "/catalog/malai-cottons/malai-cottons-saree-05-poster.webp", label: "Malai Cotton Showcase 4" },
-];
+
 
 const CATEGORY_TILES = [
   { name: "Malai Cotton Sarees", href: "/shop?category=Malai+Cottons", image: "/catalog/malai-cottons/malai-cottons-saree-01-img1.webp" },
@@ -221,24 +216,7 @@ export function HomeContent({ products }: { products: Product[] }) {
         </div>
       </section>
 
-      {/* ===== HORIZONTAL VIDEO SHOWCASE ===== */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-rose-accent text-xs font-semibold tracking-[0.3em] uppercase mb-3">
-              Styled For You
-            </p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-charcoal-text">
-              Shop the Look
-            </h2>
-          </div>
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible">
-            {SHOWCASE_VIDEOS.map((v, i) => (
-              <VideoCard key={i} src={v.src} thumb={v.thumb} label={v.label} />
-            ))}
-          </div>
-        </div>
-      </section>
+
 
 
 
