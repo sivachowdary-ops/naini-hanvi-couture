@@ -41,7 +41,7 @@ INSERT INTO public.products (
 ),
 (
   'prod-8', 'malai-cottons-saree-08', 'Malai Cottons Saree 08', 'Naini Hanvi Couture', 'Malai Cottons', 3659, NULL, true, false,
-  NULL, 'Malai Cottons', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A beautiful Malai Cottons saree from Naini Hanvi Couture''s curated collection. Perfect for both casual and festive occasions.', '[{"type":"image","src":"/catalog/malai-cottons/malai-cottons-saree-18-img1.webp","thumbnail":"/catalog/malai-cottons/malai-cottons-saree-18-img1.webp","alt":"Malai Cottons Saree 08 - View 1"},{"type":"image","src":"/catalog/malai-cottons/malai-cottons-saree-19-img1.webp","thumbnail":"/catalog/malai-cottons/malai-cottons-saree-19-img1.webp","alt":"Malai Cottons Saree 08 - View 2"}]'::jsonb, '[]'::jsonb, '{}'::text[]
+  NULL, 'Malai Cottons', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A beautiful Malai Cottons saree from Naini Hanvi Couture''s curated collection. Perfect for both casual and festive occasions.', '[{"type":"image","src":"/catalog/malai-cottons/malai-cottons-saree-18-img1.webp","thumbnail":"/catalog/malai-cottons/malai-cottons-saree-18-img1.webp","alt":"Malai Cottons Saree 08 - View 1"}]'::jsonb, '[]'::jsonb, '{}'::text[]
 ),
 (
   'prod-9', 'muslin-sequence-saree-01', 'Muslin Sequence Saree 01', 'Naini Hanvi Couture', 'Muslin Sequence', 2283, NULL, true, false,

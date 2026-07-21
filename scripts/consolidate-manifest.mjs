@@ -78,7 +78,7 @@ const groups = [
     name: "Malai Cottons Saree 08",
     slug: "malai-cottons-saree-08",
     category: "Malai Cottons",
-    oldIds: ["prod-18", "prod-19"],
+    oldIds: ["prod-18"],
     maxImages: 2
   },
   // Muslin Sequence

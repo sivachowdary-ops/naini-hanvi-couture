@@ -386,23 +386,15 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
         "alt": "Malai Cottons Saree 08 - View 1"
-      },
-      {
-        "type": "image",
-        "src": "/catalog/malai-cottons/malai-cottons-saree-19-img1.webp",
-        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-19-img1.webp",
-        "alt": "Malai Cottons Saree 08 - View 2"
       }
     ],
     "variants": [],
     "tags": [],
     "sourceFiles": [
-      "IMG_5834.HEIC",
-      "IMG_5977.HEIC"
+      "IMG_5834.HEIC"
     ],
     "selectionReason": [
-      "IMG_5834.HEIC: score 0.782 (res: 3212x5712)",
-      "IMG_5977.HEIC: score 1.000 (res: 4284x5712)"
+      "IMG_5834.HEIC: score 0.782 (res: 3212x5712)"
     ],
     "matchedVideo": null
   },
