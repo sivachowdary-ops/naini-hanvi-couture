@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { getProducts } from "@/lib/products";
 import { HomeContent } from "./HomeContent";
 
+export const revalidate = 300; // 5 minutes
+
 export const metadata: Metadata = {
   title: "Naini Hanvi Couture | Premium Ethnic Wear Sarees",
   description:
