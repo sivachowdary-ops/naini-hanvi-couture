@@ -133,7 +133,7 @@ INSERT INTO public.products (
 ),
 (
   'prod-31', 'premium-kota-saree-01', 'Premium Kota Saree 01', 'Naini Hanvi Couture', 'Premium Kota', 2804, NULL, true, false,
-  NULL, 'Premium Kota', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A beautiful Premium Kota saree from Naini Hanvi Couture''s curated collection. Perfect for both casual and festive occasions.', '[{"type":"image","src":"/catalog/premium-kota/premium-kota-saree-01-img1.webp","thumbnail":"/catalog/premium-kota/premium-kota-saree-01-img1.webp","alt":"Premium Kota Saree 01 - View 1"},{"type":"image","src":"/catalog/premium-kota/premium-kota-saree-02-img1.webp","thumbnail":"/catalog/premium-kota/premium-kota-saree-02-img1.webp","alt":"Premium Kota Saree 01 - View 2"},{"type":"video","src":"/catalog/premium-kota/premium-kota-saree-01-video.mp4","thumbnail":"/catalog/premium-kota/premium-kota-saree-01-poster.webp","alt":"Premium Kota Saree 01 - Video"}]'::jsonb, '[]'::jsonb, '{}'::text[]
+  NULL, 'Premium Kota', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A beautiful Premium Kota saree from Naini Hanvi Couture''s curated collection. Perfect for both casual and festive occasions.', '[{"type":"image","src":"/catalog/premium-kota/premium-kota-saree-01-img1.webp","thumbnail":"/catalog/premium-kota/premium-kota-saree-01-img1.webp","alt":"Premium Kota Saree 01 - View 1"},{"type":"image","src":"/catalog/premium-kota/premium-kota-saree-02-img1.webp","thumbnail":"/catalog/premium-kota/premium-kota-saree-02-img1.webp","alt":"Premium Kota Saree 01 - View 2"}]'::jsonb, '[]'::jsonb, '{}'::text[]
 ),
 (
   'prod-32', 'premium-kota-saree-02', 'Premium Kota Saree 02', 'Naini Hanvi Couture', 'Premium Kota', 4638, NULL, true, false,

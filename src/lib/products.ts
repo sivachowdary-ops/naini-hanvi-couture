@@ -1340,12 +1340,6 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
         "thumbnail": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
         "alt": "Premium Kota Saree 01 - View 2"
-      },
-      {
-        "type": "video",
-        "src": "/catalog/premium-kota/premium-kota-saree-01-video.mp4",
-        "thumbnail": "/catalog/premium-kota/premium-kota-saree-01-poster.webp",
-        "alt": "Premium Kota Saree 01 - Video"
       }
     ],
     "variants": [],
@@ -1358,7 +1352,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5935.HEIC: score 0.975 (res: 5712x4284)",
       "IMG_5936.HEIC: score 0.940 (res: 4284x5712)"
     ],
-    "matchedVideo": "/catalog/premium-kota/premium-kota-saree-01-video.mp4"
+    "matchedVideo": null
   },
   {
     "id": "prod-32",

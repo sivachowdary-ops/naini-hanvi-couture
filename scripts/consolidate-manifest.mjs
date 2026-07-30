@@ -447,7 +447,10 @@ function run() {
     
     // Explicit Video Assignment
     let matchedVideo = null;
-    if (explicitVideoMapping[group.slug]) {
+    const blacklistedVideoSlugs = ["premium-kota-saree-01"];
+    if (blacklistedVideoSlugs.includes(group.slug)) {
+      console.log(`     🎬 Skipping video for ${group.slug} (blacklisted by user request)`);
+    } else if (explicitVideoMapping[group.slug]) {
       const vidInfo = explicitVideoMapping[group.slug];
       combinedGallery.push({
         type: "video",
