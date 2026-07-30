@@ -138,6 +138,232 @@ const groups = [
     category: "Silk Kota",
     oldIds: ["prod-38", "prod-39"],
     maxImages: 2
+  },
+
+  // ─── NEW CATEGORIES (added 2026-07-30) ───
+
+  // Ajarakh Modal Silk (9 products from 23 images)
+  {
+    newId: "prod-16",
+    name: "Ajarakh Modal Silk Saree 01",
+    slug: "ajarakh-modal-silk-saree-01",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-40", "prod-41", "prod-42"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-17",
+    name: "Ajarakh Modal Silk Saree 02",
+    slug: "ajarakh-modal-silk-saree-02",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-43", "prod-44", "prod-45"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-18",
+    name: "Ajarakh Modal Silk Saree 03",
+    slug: "ajarakh-modal-silk-saree-03",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-46", "prod-47"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-19",
+    name: "Ajarakh Modal Silk Saree 04",
+    slug: "ajarakh-modal-silk-saree-04",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-48", "prod-49", "prod-50"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-20",
+    name: "Ajarakh Modal Silk Saree 05",
+    slug: "ajarakh-modal-silk-saree-05",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-51", "prod-52", "prod-53"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-21",
+    name: "Ajarakh Modal Silk Saree 06",
+    slug: "ajarakh-modal-silk-saree-06",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-54", "prod-55", "prod-56"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-22",
+    name: "Ajarakh Modal Silk Saree 07",
+    slug: "ajarakh-modal-silk-saree-07",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-57", "prod-58"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-23",
+    name: "Ajarakh Modal Silk Saree 08",
+    slug: "ajarakh-modal-silk-saree-08",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-59", "prod-60"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-24",
+    name: "Ajarakh Modal Silk Saree 09",
+    slug: "ajarakh-modal-silk-saree-09",
+    category: "Ajarakh Modal Silk",
+    oldIds: ["prod-61", "prod-62"],
+    maxImages: 2
+  },
+
+  // Jamdani (6 products from 13 images)
+  {
+    newId: "prod-25",
+    name: "Jamdani Saree 01",
+    slug: "jamdani-saree-01",
+    category: "Jamdani",
+    oldIds: ["prod-63", "prod-64", "prod-65"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-26",
+    name: "Jamdani Saree 02",
+    slug: "jamdani-saree-02",
+    category: "Jamdani",
+    oldIds: ["prod-66", "prod-67", "prod-68"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-27",
+    name: "Jamdani Saree 03",
+    slug: "jamdani-saree-03",
+    category: "Jamdani",
+    oldIds: ["prod-69", "prod-70"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-28",
+    name: "Jamdani Saree 04",
+    slug: "jamdani-saree-04",
+    category: "Jamdani",
+    oldIds: ["prod-71", "prod-72"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-29",
+    name: "Jamdani Saree 05",
+    slug: "jamdani-saree-05",
+    category: "Jamdani",
+    oldIds: ["prod-73"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-30",
+    name: "Jamdani Saree 06",
+    slug: "jamdani-saree-06",
+    category: "Jamdani",
+    oldIds: ["prod-74", "prod-75"],
+    maxImages: 2
+  },
+
+  // Premium Kota (7 products from 17 images + 1 video)
+  {
+    newId: "prod-31",
+    name: "Premium Kota Saree 01",
+    slug: "premium-kota-saree-01",
+    category: "Premium Kota",
+    oldIds: ["prod-76", "prod-77"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-32",
+    name: "Premium Kota Saree 02",
+    slug: "premium-kota-saree-02",
+    category: "Premium Kota",
+    oldIds: ["prod-78", "prod-79"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-33",
+    name: "Premium Kota Saree 03",
+    slug: "premium-kota-saree-03",
+    category: "Premium Kota",
+    oldIds: ["prod-80", "prod-81"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-34",
+    name: "Premium Kota Saree 04",
+    slug: "premium-kota-saree-04",
+    category: "Premium Kota",
+    oldIds: ["prod-82", "prod-83", "prod-84"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-35",
+    name: "Premium Kota Saree 05",
+    slug: "premium-kota-saree-05",
+    category: "Premium Kota",
+    oldIds: ["prod-85", "prod-86"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-36",
+    name: "Premium Kota Saree 06",
+    slug: "premium-kota-saree-06",
+    category: "Premium Kota",
+    oldIds: ["prod-87", "prod-88", "prod-89"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-37",
+    name: "Premium Kota Saree 07",
+    slug: "premium-kota-saree-07",
+    category: "Premium Kota",
+    oldIds: ["prod-90", "prod-91", "prod-92"],
+    maxImages: 2
+  },
+
+  // Swan Jamdani (5 products from 13 images)
+  {
+    newId: "prod-38",
+    name: "Swan Jamdani Saree 01",
+    slug: "swan-jamdani-saree-01",
+    category: "Swan Jamdani",
+    oldIds: ["prod-93", "prod-94", "prod-95"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-39",
+    name: "Swan Jamdani Saree 02",
+    slug: "swan-jamdani-saree-02",
+    category: "Swan Jamdani",
+    oldIds: ["prod-96", "prod-97"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-40",
+    name: "Swan Jamdani Saree 03",
+    slug: "swan-jamdani-saree-03",
+    category: "Swan Jamdani",
+    oldIds: ["prod-98", "prod-99", "prod-100", "prod-101"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-41",
+    name: "Swan Jamdani Saree 04",
+    slug: "swan-jamdani-saree-04",
+    category: "Swan Jamdani",
+    oldIds: ["prod-102", "prod-103"],
+    maxImages: 2
+  },
+  {
+    newId: "prod-42",
+    name: "Swan Jamdani Saree 05",
+    slug: "swan-jamdani-saree-05",
+    category: "Swan Jamdani",
+    oldIds: ["prod-104", "prod-105"],
+    maxImages: 2
   }
 ];
 
@@ -230,6 +456,21 @@ function run() {
         alt: `${group.name} - Video`
       });
       matchedVideo = vidInfo.src;
+    } else {
+      // Fallback: collect videos from raw products in this group
+      for (const p of matchedProducts) {
+        for (const item of p.gallery) {
+          if (item.type === "video") {
+            combinedGallery.push({
+              ...item,
+              alt: `${group.name} - Video`
+            });
+            matchedVideo = item.src;
+            break; // only take the first video
+          }
+        }
+        if (matchedVideo) break;
+      }
     }
 
     // Combine source files metadata

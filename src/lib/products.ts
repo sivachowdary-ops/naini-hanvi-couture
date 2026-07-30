@@ -80,6 +80,12 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
         "alt": "Malai Cottons Saree 01 - View 2"
+      },
+      {
+        "type": "video",
+        "src": "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4",
+        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-poster.webp",
+        "alt": "Malai Cottons Saree 01 - Video"
       }
     ],
     "variants": [],
@@ -100,7 +106,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5817.HEIC: score 0.778 (res: 3212x5712)",
       "IMG_5818.HEIC: score 0.778 (res: 3212x5712)"
     ],
-    "matchedVideo": null
+    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4"
   },
   {
     "id": "prod-2",
@@ -689,6 +695,1122 @@ export const MOCK_PRODUCTS: Product[] = [
     "selectionReason": [
       "IMG_5994.HEIC: score 0.963 (res: 4284x5712)",
       "IMG_5995.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-16",
+    "slug": "ajarakh-modal-silk-saree-01",
+    "name": "Ajarakh Modal Silk Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 3301,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-01-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-01-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-02-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-02-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 01 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5877.HEIC",
+      "IMG_5878.HEIC",
+      "IMG_5879.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5877.HEIC: score 0.999 (res: 4284x5712)",
+      "IMG_5878.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5879.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-17",
+    "slug": "ajarakh-modal-silk-saree-02",
+    "name": "Ajarakh Modal Silk Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 2736,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-04-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-04-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 02 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-05-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-05-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 02 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5882.HEIC",
+      "IMG_5883.HEIC",
+      "IMG_5884.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5882.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5883.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5884.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-18",
+    "slug": "ajarakh-modal-silk-saree-03",
+    "name": "Ajarakh Modal Silk Saree 03",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 4592,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-07-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-07-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 03 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-08-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-08-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 03 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5886.HEIC",
+      "IMG_5887.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5886.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5887.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-19",
+    "slug": "ajarakh-modal-silk-saree-04",
+    "name": "Ajarakh Modal Silk Saree 04",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 2045,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-09-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-09-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 04 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-10-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-10-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 04 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5889.HEIC",
+      "IMG_5890.HEIC",
+      "IMG_5891.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5889.HEIC: score 1.000 (res: 5712x4284)",
+      "IMG_5890.HEIC: score 1.000 (res: 5712x4284)",
+      "IMG_5891.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-20",
+    "slug": "ajarakh-modal-silk-saree-05",
+    "name": "Ajarakh Modal Silk Saree 05",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 3648,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-12-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-12-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 05 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-13-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-13-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 05 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5893.HEIC",
+      "IMG_5894.HEIC",
+      "IMG_5895.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5893.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5894.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5895.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-21",
+    "slug": "ajarakh-modal-silk-saree-06",
+    "name": "Ajarakh Modal Silk Saree 06",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 2871,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-15-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-15-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 06 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-16-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-16-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 06 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5897.HEIC",
+      "IMG_5898.HEIC",
+      "IMG_5899.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5897.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5898.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5899.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-22",
+    "slug": "ajarakh-modal-silk-saree-07",
+    "name": "Ajarakh Modal Silk Saree 07",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 3481,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-18-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-18-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 07 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-19-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-19-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 07 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5905.HEIC",
+      "IMG_5906.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5905.HEIC: score 0.964 (res: 4284x5712)",
+      "IMG_5906.HEIC: score 0.944 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-23",
+    "slug": "ajarakh-modal-silk-saree-08",
+    "name": "Ajarakh Modal Silk Saree 08",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 3539,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-20-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-20-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 08 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-21-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-21-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 08 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5908.HEIC",
+      "IMG_5909.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5908.HEIC: score 0.969 (res: 4284x5712)",
+      "IMG_5909.HEIC: score 0.912 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-24",
+    "slug": "ajarakh-modal-silk-saree-09",
+    "name": "Ajarakh Modal Silk Saree 09",
+    "brand": "Naini Hanvi Couture",
+    "category": "Ajarakh Modal Silk",
+    "price": 2000,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Ajarakh Modal Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Ajarakh Modal Silk saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-22-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-22-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 09 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-23-img1.webp",
+        "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-23-img1.webp",
+        "alt": "Ajarakh Modal Silk Saree 09 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5911.HEIC",
+      "IMG_5912.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5911.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5912.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-25",
+    "slug": "jamdani-saree-01",
+    "name": "Jamdani Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 2795,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-01-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-01-img1.webp",
+        "alt": "Jamdani Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-02-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-02-img1.webp",
+        "alt": "Jamdani Saree 01 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5873.HEIC",
+      "IMG_5874.HEIC",
+      "IMG_5875.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5873.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5874.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5875.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-26",
+    "slug": "jamdani-saree-02",
+    "name": "Jamdani Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 4446,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-04-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-04-img1.webp",
+        "alt": "Jamdani Saree 02 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-05-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-05-img1.webp",
+        "alt": "Jamdani Saree 02 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5917.HEIC",
+      "IMG_5918.HEIC",
+      "IMG_5919.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5917.HEIC: score 0.930 (res: 4284x5712)",
+      "IMG_5918.HEIC: score 0.945 (res: 4284x5712)",
+      "IMG_5919.HEIC: score 0.919 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-27",
+    "slug": "jamdani-saree-03",
+    "name": "Jamdani Saree 03",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 4373,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-07-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-07-img1.webp",
+        "alt": "Jamdani Saree 03 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-08-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-08-img1.webp",
+        "alt": "Jamdani Saree 03 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5921.HEIC",
+      "IMG_5922.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5921.HEIC: score 0.990 (res: 4284x5712)",
+      "IMG_5922.HEIC: score 0.966 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-28",
+    "slug": "jamdani-saree-04",
+    "name": "Jamdani Saree 04",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 4751,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-09-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-09-img1.webp",
+        "alt": "Jamdani Saree 04 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-10-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-10-img1.webp",
+        "alt": "Jamdani Saree 04 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5924.HEIC",
+      "IMG_5925.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5924.HEIC: score 0.955 (res: 4284x5712)",
+      "IMG_5925.HEIC: score 0.927 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-29",
+    "slug": "jamdani-saree-05",
+    "name": "Jamdani Saree 05",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 3833,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-11-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-11-img1.webp",
+        "alt": "Jamdani Saree 05 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-11-img2.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-11-img2.webp",
+        "alt": "Jamdani Saree 05 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5928.HEIC",
+      "IMG_5929.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5928.HEIC: score 1.000 (res: 5712x4284)",
+      "IMG_5929.HEIC: score 0.995 (res: 5712x4284)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-30",
+    "slug": "jamdani-saree-06",
+    "name": "Jamdani Saree 06",
+    "brand": "Naini Hanvi Couture",
+    "category": "Jamdani",
+    "price": 2548,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-12-img1.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-12-img1.webp",
+        "alt": "Jamdani Saree 06 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/jamdani/jamdani-saree-12-img2.webp",
+        "thumbnail": "/catalog/jamdani/jamdani-saree-12-img2.webp",
+        "alt": "Jamdani Saree 06 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5931.HEIC",
+      "IMG_5932.HEIC",
+      "IMG_5933.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5931.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5932.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5933.HEIC: score 0.977 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-31",
+    "slug": "premium-kota-saree-01",
+    "name": "Premium Kota Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 2804,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-01-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-01-img1.webp",
+        "alt": "Premium Kota Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
+        "alt": "Premium Kota Saree 01 - View 2"
+      },
+      {
+        "type": "video",
+        "src": "/catalog/premium-kota/premium-kota-saree-01-video.mp4",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-01-poster.webp",
+        "alt": "Premium Kota Saree 01 - Video"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5935.HEIC",
+      "IMG_5936.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5935.HEIC: score 0.975 (res: 5712x4284)",
+      "IMG_5936.HEIC: score 0.940 (res: 4284x5712)"
+    ],
+    "matchedVideo": "/catalog/premium-kota/premium-kota-saree-01-video.mp4"
+  },
+  {
+    "id": "prod-32",
+    "slug": "premium-kota-saree-02",
+    "name": "Premium Kota Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 4638,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-03-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-03-img1.webp",
+        "alt": "Premium Kota Saree 02 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-04-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-04-img1.webp",
+        "alt": "Premium Kota Saree 02 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5939.HEIC",
+      "IMG_5940.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5939.HEIC: score 0.979 (res: 4284x5712)",
+      "IMG_5940.HEIC: score 0.935 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-33",
+    "slug": "premium-kota-saree-03",
+    "name": "Premium Kota Saree 03",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 4188,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-05-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-05-img1.webp",
+        "alt": "Premium Kota Saree 03 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-06-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-06-img1.webp",
+        "alt": "Premium Kota Saree 03 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5943.HEIC",
+      "IMG_5944.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5943.HEIC: score 0.936 (res: 4284x5712)",
+      "IMG_5944.HEIC: score 0.942 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-34",
+    "slug": "premium-kota-saree-04",
+    "name": "Premium Kota Saree 04",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 3963,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-07-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-07-img1.webp",
+        "alt": "Premium Kota Saree 04 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-08-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-08-img1.webp",
+        "alt": "Premium Kota Saree 04 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5946.HEIC",
+      "IMG_5947.HEIC",
+      "IMG_5948.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5946.HEIC: score 0.972 (res: 4284x5712)",
+      "IMG_5947.HEIC: score 0.917 (res: 4284x5712)",
+      "IMG_5948.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-35",
+    "slug": "premium-kota-saree-05",
+    "name": "Premium Kota Saree 05",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 4308,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-10-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-10-img1.webp",
+        "alt": "Premium Kota Saree 05 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-10-img2.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-10-img2.webp",
+        "alt": "Premium Kota Saree 05 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5951.HEIC",
+      "IMG_5950.HEIC",
+      "IMG_5952.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5951.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5950.HEIC: score 0.980 (res: 4284x5712)",
+      "IMG_5952.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-36",
+    "slug": "premium-kota-saree-06",
+    "name": "Premium Kota Saree 06",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 4778,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-12-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-12-img1.webp",
+        "alt": "Premium Kota Saree 06 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-13-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-13-img1.webp",
+        "alt": "Premium Kota Saree 06 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5968.HEIC",
+      "IMG_5969.HEIC",
+      "IMG_5970.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5968.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5969.HEIC: score 0.836 (res: 3024x4032)",
+      "IMG_5970.HEIC: score 0.824 (res: 3024x4032)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-37",
+    "slug": "premium-kota-saree-07",
+    "name": "Premium Kota Saree 07",
+    "brand": "Naini Hanvi Couture",
+    "category": "Premium Kota",
+    "price": 3026,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Premium Kota",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Premium Kota saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-15-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-15-img1.webp",
+        "alt": "Premium Kota Saree 07 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/premium-kota/premium-kota-saree-16-img1.webp",
+        "thumbnail": "/catalog/premium-kota/premium-kota-saree-16-img1.webp",
+        "alt": "Premium Kota Saree 07 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5973.HEIC",
+      "IMG_5974.HEIC",
+      "IMG_5975.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5973.HEIC: score 0.972 (res: 4284x5712)",
+      "IMG_5974.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5975.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-38",
+    "slug": "swan-jamdani-saree-01",
+    "name": "Swan Jamdani Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Swan Jamdani",
+    "price": 4514,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Swan Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Swan Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp",
+        "alt": "Swan Jamdani Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-02-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-02-img1.webp",
+        "alt": "Swan Jamdani Saree 01 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5405.HEIC",
+      "IMG_5406.HEIC",
+      "IMG_5407.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5405.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5406.HEIC: score 0.814 (res: 3212x5712)",
+      "IMG_5407.HEIC: score 0.803 (res: 3212x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-39",
+    "slug": "swan-jamdani-saree-02",
+    "name": "Swan Jamdani Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Swan Jamdani",
+    "price": 4543,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Swan Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Swan Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-04-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-04-img1.webp",
+        "alt": "Swan Jamdani Saree 02 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-05-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-05-img1.webp",
+        "alt": "Swan Jamdani Saree 02 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5413.HEIC",
+      "IMG_5414.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5413.HEIC: score 0.815 (res: 3212x5712)",
+      "IMG_5414.HEIC: score 0.813 (res: 3212x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-40",
+    "slug": "swan-jamdani-saree-03",
+    "name": "Swan Jamdani Saree 03",
+    "brand": "Naini Hanvi Couture",
+    "category": "Swan Jamdani",
+    "price": 3859,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Swan Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Swan Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-06-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-06-img1.webp",
+        "alt": "Swan Jamdani Saree 03 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-07-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-07-img1.webp",
+        "alt": "Swan Jamdani Saree 03 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5862.HEIC",
+      "IMG_5863.HEIC",
+      "IMG_5864.HEIC",
+      "IMG_5865.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5862.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5863.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5864.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5865.HEIC: score 0.994 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-41",
+    "slug": "swan-jamdani-saree-04",
+    "name": "Swan Jamdani Saree 04",
+    "brand": "Naini Hanvi Couture",
+    "category": "Swan Jamdani",
+    "price": 4639,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Swan Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Swan Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-10-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-10-img1.webp",
+        "alt": "Swan Jamdani Saree 04 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-11-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-11-img1.webp",
+        "alt": "Swan Jamdani Saree 04 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5867.HEIC",
+      "IMG_5868.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5867.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5868.HEIC: score 1.000 (res: 4284x5712)"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-42",
+    "slug": "swan-jamdani-saree-05",
+    "name": "Swan Jamdani Saree 05",
+    "brand": "Naini Hanvi Couture",
+    "category": "Swan Jamdani",
+    "price": 4851,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Swan Jamdani",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A beautiful Swan Jamdani saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-12-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-12-img1.webp",
+        "alt": "Swan Jamdani Saree 05 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/swan-jamdani/swan-jamdani-saree-13-img1.webp",
+        "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-13-img1.webp",
+        "alt": "Swan Jamdani Saree 05 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_5870.HEIC",
+      "IMG_5871.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_5870.HEIC: score 1.000 (res: 4284x5712)",
+      "IMG_5871.HEIC: score 1.000 (res: 4284x5712)"
     ],
     "matchedVideo": null
   }

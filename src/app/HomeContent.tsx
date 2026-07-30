@@ -39,6 +39,10 @@ const CATEGORY_TILES = [
   { name: "Malai Cotton Sarees", href: "/shop?category=Malai+Cottons", image: "/catalog/malai-cottons/malai-cottons-saree-01-img1.webp" },
   { name: "Muslin Sequence Sarees", href: "/shop?category=Muslin+Sequence", image: "/catalog/muslin-sequence/muslin-sequence-saree-20-img1.webp" },
   { name: "Silk Kota Sarees", href: "/shop?category=Silk+Kota", image: "/catalog/silk-kota/silk-kota-saree-29-img1.webp" },
+  { name: "Ajarakh Modal Silk", href: "/shop?category=Ajarakh+Modal+Silk", image: "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-01-img1.webp" },
+  { name: "Jamdani Sarees", href: "/shop?category=Jamdani", image: "/catalog/jamdani/jamdani-saree-01-img1.webp" },
+  { name: "Premium Kota Sarees", href: "/shop?category=Premium+Kota", image: "/catalog/premium-kota/premium-kota-saree-01-img1.webp" },
+  { name: "Swan Jamdani Sarees", href: "/shop?category=Swan+Jamdani", image: "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp" },
 ];
 
 function VideoCard({ src, thumb, label }: { src: string; thumb: string; label: string }) {
