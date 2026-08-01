@@ -7,7 +7,7 @@ import { Product } from "@/lib/products";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { TrustBadges } from "@/components/ui/TrustBadges";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { ArrowRight, Play, Volume2, VolumeX, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Pause, Volume2, VolumeX, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const FAQ_PREVIEW = [
@@ -87,6 +87,56 @@ function VideoCard({ src, thumb, label }: { src: string; thumb: string; label: s
             <Play size={28} className="text-white fill-white" />
           </div>
         </div>
+      )}
+    </div>
+  );
+}
+
+function StoryVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handleToggle = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (isPlaying) {
+      video.pause();
+      setIsPlaying(false);
+    } else {
+      video.play();
+      setIsPlaying(true);
+    }
+  };
+
+  return (
+    <div className="relative aspect-[4/5] lg:aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer" onClick={handleToggle}>
+      <video
+        ref={videoRef}
+        src="/assets/story-section.mp4"
+        loop
+        playsInline
+        preload="metadata"
+        poster="/assets/story-section-poster.webp"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Play / Pause overlay */}
+      <div
+        className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
+          isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"
+        }`}
+      >
+        <div className="bg-black/40 backdrop-blur-sm rounded-full p-5 transition-transform duration-200 hover:scale-110">
+          {isPlaying ? (
+            <Pause size={32} className="text-white" />
+          ) : (
+            <Play size={32} className="text-white ml-1" />
+          )}
+        </div>
+      </div>
+      {/* Dark overlay when paused */}
+      {!isPlaying && (
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
       )}
     </div>
   );
@@ -228,16 +278,7 @@ export function HomeContent({ products }: { products: Product[] }) {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[4/5] lg:aspect-[3/4] rounded-xl overflow-hidden">
-              <video
-                src="/assets/story-section.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
+            <StoryVideo />
             <div className="space-y-6 max-w-lg">
               <p className="text-rose-accent text-xs font-semibold tracking-[0.3em] uppercase">
                 Our Story
