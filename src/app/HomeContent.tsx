@@ -100,7 +100,7 @@ export function HomeContent({ products }: { products: Product[] }) {
       {/* ===== HERO ===== */}
       <section className="relative h-[70vh] lg:h-[85vh] overflow-hidden">
         <Image
-          src="/assets/hero-banner.jpeg"
+          src="/assets/hero-banner.webp"
           alt="Naini Hanvi Couture - Premium Ethnic Wear"
           fill
           className="object-cover"
