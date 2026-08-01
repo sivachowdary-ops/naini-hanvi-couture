@@ -100,7 +100,7 @@ export function HomeContent({ products }: { products: Product[] }) {
       {/* ===== HERO ===== */}
       <section className="relative h-[70vh] lg:h-[85vh] overflow-hidden">
         <Image
-          src="/assets/hero-banner.png"
+          src="/assets/hero-banner.jpeg"
           alt="Naini Hanvi Couture - Premium Ethnic Wear"
           fill
           className="object-cover"
@@ -229,12 +229,13 @@ export function HomeContent({ products }: { products: Product[] }) {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/5] lg:aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/assets/saree-2.webp"
-                alt="Our Story - Naini Hanvi Couture"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+              <video
+                src="/assets/story-section.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <div className="space-y-6 max-w-lg">
