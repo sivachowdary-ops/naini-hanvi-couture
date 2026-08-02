@@ -117,7 +117,7 @@ function StoryVideo() {
         loop
         playsInline
         preload="metadata"
-        poster="/assets/story-section-poster.webp"
+        poster="/assets/hero-banner.webp"
         className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Play / Pause overlay */}

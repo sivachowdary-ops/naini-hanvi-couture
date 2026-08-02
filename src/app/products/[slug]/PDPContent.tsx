@@ -7,7 +7,7 @@ import { useCart } from "@/context/CartContext";
 import { MediaGallery } from "@/components/ui/MediaGallery";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { TrustBadges } from "@/components/ui/TrustBadges";
-import { ShoppingBag, ChevronDown, ChevronUp, Truck, RotateCcw, Minus, Plus } from "lucide-react";
+import { ShoppingBag, ChevronDown, ChevronUp, Truck, RotateCcw, Minus, Plus, Video, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -225,6 +225,33 @@ export function PDPContent({ product }: PDPContentProps) {
                 <WhatsAppIcon size={18} />
                 Ask on WhatsApp
               </a>
+              {/* Video Call & Store Visit */}
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href={`https://wa.me/919100050610?text=${encodeURIComponent(
+                    `Hi! I'd like to request a video call to see this product:\n📦 ${product.name} (₹${product.price.toLocaleString()})\n📂 Category: ${product.category}\n\nPlease let me know a convenient time for the video call. Thank you!`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent("request_video_call", { productId: product.id, productName: product.name })}
+                  className="py-3 font-semibold text-xs rounded-md transition-all duration-200 flex items-center justify-center gap-2 border border-rose-accent/40 text-rose-accent hover:bg-rose-accent hover:text-cream-base"
+                >
+                  <Video size={16} />
+                  Video Call
+                </a>
+                <a
+                  href={`https://wa.me/919100050610?text=${encodeURIComponent(
+                    `Hi! I'd like to visit your store to see this product in person:\n📦 ${product.name} (₹${product.price.toLocaleString()})\n📂 Category: ${product.category}\n\nCould you please share the store address and available timings? Thank you!`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent("request_store_visit", { productId: product.id, productName: product.name })}
+                  className="py-3 font-semibold text-xs rounded-md transition-all duration-200 flex items-center justify-center gap-2 border border-rose-accent/40 text-rose-accent hover:bg-rose-accent hover:text-cream-base"
+                >
+                  <MapPin size={16} />
+                  Store Visit
+                </a>
+              </div>
             </div>
 
             {/* Delivery estimate */}
