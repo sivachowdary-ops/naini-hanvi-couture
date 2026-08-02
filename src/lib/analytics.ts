@@ -16,7 +16,9 @@ type AnalyticsEvent =
   | "whatsapp_redirect"
   | "whatsapp_product_inquiry"
   | "cart_opened"
-  | "page_view";
+  | "page_view"
+  | "request_video_call"
+  | "request_store_visit";
 
 type EventParams = Record<string, string | number | boolean | undefined>;
 
