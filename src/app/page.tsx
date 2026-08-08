@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getProducts } from "@/lib/products";
 import { HomeContent } from "./HomeContent";
 
-export const revalidate = 300; // 5 minutes
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Naini Hanvi Couture | Premium Ethnic Wear Sarees",
@@ -27,7 +27,7 @@ export default async function HomePage() {
     url: "https://nainihanvi.com",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-91000-50610",
+      telephone: "+91-80081-22236",
       contactType: "customer service",
     },
   };

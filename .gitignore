@@ -43,16 +43,19 @@ next-env.d.ts
 
 .vercel
 
-# client raw assets
-/Malai cottons-20260720T093242Z-1-001/
-/Muslin sequence-20260720T093241Z-1-001/
-/Silk kota-20260720T093241Z-1-001/
-/Ajarakh ModalSilk-20260730T154352Z-1-001/
-/Jamdani-20260730T154353Z-1-001/
-/Premium kota-20260730T154351Z-1-001/
-/Swan Jamdani-20260730T154353Z-1-001/
+# client raw assets and zips
+/*-202607*
+/*-202608*
 /raw_assets/
+/scratch/
 
+# raw root media
+/*.MOV
+/*.mp4
+/*.HEIC
+/*.zip
+
+# temp folders
 public/catalog/_tmp/
 catalog-ingestion-manifest-raw.json
 tmp.html

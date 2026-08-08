@@ -75,7 +75,7 @@ export default function FAQPage() {
             response.
           </p>
           <a
-            href="https://wa.me/919100050610"
+            href="https://wa.me/918008122236"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-rose-deep text-cream-base px-8 py-3.5 rounded-lg font-semibold text-sm tracking-wide hover:bg-rose-accent transition-colors duration-300"

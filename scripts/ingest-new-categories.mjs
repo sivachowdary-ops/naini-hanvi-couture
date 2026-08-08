@@ -206,7 +206,9 @@ async function convertToWebP(inputPath, outputPath) {
   
   await sharp(processable)
     .resize(1600, null, { withoutEnlargement: true })
-    .webp({ quality: WEBP_QUALITY })
+    .toColorspace('srgb')
+    .withMetadata({ icc: 'srgb' })
+    .webp({ quality: 80, effort: 6, smartSubsample: true })
     .toFile(outputPath);
 }
 
@@ -215,7 +217,7 @@ function transcodeVideo(inputPath, outputPath) {
     const relInput = relative(PROJECT_ROOT, inputPath).replace(/\//g, "\\");
     const relOutput = relative(PROJECT_ROOT, outputPath).replace(/\//g, "\\");
     execSync(
-      `ffmpeg -y -i "${relInput}" -c:v libx264 -preset fast -crf 28 -movflags +faststart -c:a aac -b:a 64k -vf "scale='min(720,iw)':-2" "${relOutput}"`,
+      `ffmpeg -y -i "${relInput}" -c:v libx264 -preset slow -crf 30 -movflags +faststart -c:a aac -b:a 128k -vf "scale=-2:720" "${relOutput}"`,
       { encoding: "utf8", timeout: 120000, stdio: "pipe" }
     );
     return true;

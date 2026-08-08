@@ -17,7 +17,7 @@ export type WhatsAppShippingData = {
   orderNotes?: string;
 };
 
-const WHATSAPP_PHONE = "919100050610";
+const WHATSAPP_PHONE = "918008122236";
 
 export function buildWhatsAppOrderMessage(
   items: WhatsAppOrderItem[],

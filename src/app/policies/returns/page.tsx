@@ -63,7 +63,7 @@ export default function ReturnsPolicyPage() {
                 How to Initiate a Return
               </h2>
               <p>
-                To initiate a return or exchange, please reach out to us via WhatsApp at +91 91000 50610 or email us at hello@nainihanvi.com with your order number, photos, and a brief description of the issue. Our team will guide you through the process.
+                To initiate a return or exchange, please reach out to us via WhatsApp at +91 80081 22236 or email us at chegondisoujanya@gmail.com with your order number, photos, and a brief description of the issue. Our team will guide you through the process.
               </p>
             </div>
 

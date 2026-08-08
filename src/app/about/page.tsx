@@ -79,7 +79,7 @@ export default function AboutPage() {
               that wove it with care.
             </p>
             <p>
-              At Naini Hanvi, we believe that ethnic wear is more than
+              At Naini Hanvi Couture, we believe that ethnic wear is more than
               clothing — it&apos;s an expression of identity, celebration, and
               grace. Whether you&apos;re dressing for a wedding, a festival, or
               an everyday moment of elegance, we are here to help you find the

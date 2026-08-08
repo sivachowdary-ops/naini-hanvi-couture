@@ -2,14 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { cn } from "@/lib/utils";
 
 const ANNOUNCEMENTS = [
-  "FREE SHIPPING IN INDIA",
-  "NEW BANARASI COLLECTION OUT NOW",
-  "DISPATCH IN 24 HOURS"
+  "Curating Pure Handlooms with Love",
+  "Now Offering Free Shipping Across Hyderabad!",
+  "Orders placed before 2 PM are dispatched the same day"
 ];
 
 export function Header() {
@@ -70,9 +71,18 @@ export function Header() {
           </button>
 
           {/* Logo */}
-          <Link href="/" className="text-2xl font-serif font-bold text-rose-deep tracking-tight text-center lg:text-left flex-1 lg:flex-none">
-            {/* TODO: Replace with Client Logo image */}
-            Naini Hanvi
+          <Link href="/" className="flex items-center gap-2.5 group flex-1 lg:flex-none justify-center lg:justify-start">
+            <Image
+              src="/assets/logo.webp"
+              alt="Naini Hanvi Couture Logo"
+              width={34}
+              height={34}
+              className="object-contain rounded-full shadow-sm group-hover:scale-105 transition-transform duration-200"
+              priority
+            />
+            <span className="text-xl font-serif font-bold text-rose-deep tracking-tight">
+              Naini Hanvi Couture
+            </span>
           </Link>
 
           {/* Desktop Nav */}

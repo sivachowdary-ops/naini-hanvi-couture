@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { PDPContent } from "./PDPContent";
 
-export const revalidate = 300; // 5 minutes
+export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   const products = await getProducts();

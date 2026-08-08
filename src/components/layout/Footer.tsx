@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Heart, Share2 } from "lucide-react";
 
 export function Footer() {
@@ -9,7 +10,16 @@ export function Footer() {
           
           {/* Brand & Story */}
           <div className="space-y-4">
-            <h3 className="font-serif text-2xl font-bold text-rose-deep">Naini Hanvi</h3>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/assets/logo.webp"
+                alt="Naini Hanvi Couture Logo"
+                width={30}
+                height={30}
+                className="object-contain rounded-full shadow-sm"
+              />
+              <h3 className="font-serif text-2xl font-bold text-rose-deep">Naini Hanvi Couture</h3>
+            </div>
             <p className="text-muted-text text-sm leading-relaxed max-w-sm">
               Discover the elegance of premium ethnic wear. Handpicked sarees and traditional attire that celebrate your grace and beauty.
             </p>
@@ -71,15 +81,15 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-muted-text">
                 <Phone size={18} className="text-rose-accent mt-0.5 shrink-0" />
-                <span>+91 91000 50610 <br/><span className="text-xs opacity-80">(Mon-Sat, 10am-7pm)</span></span>
+                <span>+91 80081 22236 <br/><span className="text-xs opacity-80">(Mon-Sat, 10am-7pm)</span></span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-text">
                 <Mail size={18} className="text-rose-accent mt-0.5 shrink-0" />
-                <span>hello@nainihanvi.com</span>
+                <span>chegondisoujanya@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-text">
                 <MapPin size={18} className="text-rose-accent mt-0.5 shrink-0" />
-                <span>Studio Address Here <br/> City, State - 000000</span>
+                <span>Manjeera pipeline road, <br/> Hafeezpet, Hyderabad</span>
               </li>
             </ul>
           </div>

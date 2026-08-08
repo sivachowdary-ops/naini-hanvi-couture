@@ -1,12 +1,13 @@
 "use client";
 
 import React, { createContext, useContext, useReducer, useEffect } from "react";
-import { CartLineItem } from "@/lib/products";
+import { CartLineItem, Product, MOCK_PRODUCTS, getProducts } from "@/lib/products";
 
 type CartState = {
   items: CartLineItem[];
   isOpen: boolean; // Controls the cart drawer
   toastMessage: string | null;
+  products: Product[];
 };
 
 type CartAction =
@@ -19,12 +20,14 @@ type CartAction =
   | { type: "OPEN_CART" }
   | { type: "CLOSE_CART" }
   | { type: "SHOW_TOAST"; payload: string }
-  | { type: "HIDE_TOAST" };
+  | { type: "HIDE_TOAST" }
+  | { type: "SET_PRODUCTS"; payload: Product[] };
 
 const initialState: CartState = {
   items: [],
   isOpen: false,
   toastMessage: null,
+  products: MOCK_PRODUCTS,
 };
 
 function cartReducer(state: CartState, action: CartAction): CartState {
@@ -70,6 +73,8 @@ function cartReducer(state: CartState, action: CartAction): CartState {
       return { ...state, toastMessage: action.payload };
     case "HIDE_TOAST":
       return { ...state, toastMessage: null };
+    case "SET_PRODUCTS":
+      return { ...state, products: action.payload };
     default:
       return state;
   }
@@ -94,6 +99,25 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     } catch (e) {
       console.error("Failed to load cart", e);
     }
+  }, []);
+
+  // Fetch live products from database to ensure fresh prices/stock
+  useEffect(() => {
+    let active = true;
+    async function loadLiveProducts() {
+      try {
+        const live = await getProducts();
+        if (active && live && live.length > 0) {
+          dispatch({ type: "SET_PRODUCTS", payload: live });
+        }
+      } catch (err) {
+        console.error("Failed to load live products for cart context", err);
+      }
+    }
+    loadLiveProducts();
+    return () => {
+      active = false;
+    };
   }, []);
 
   // Save to local storage

@@ -43,6 +43,8 @@ const CATEGORY_TILES = [
   { name: "Jamdani Sarees", href: "/shop?category=Jamdani", image: "/catalog/jamdani/jamdani-saree-01-img1.webp" },
   { name: "Premium Kota Sarees", href: "/shop?category=Premium+Kota", image: "/catalog/premium-kota/premium-kota-saree-01-img1.webp" },
   { name: "Swan Jamdani Sarees", href: "/shop?category=Swan+Jamdani", image: "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp" },
+  { name: "Matka Silk Sarees", href: "/shop?category=Matka+Silk", image: "/catalog/matka-silk/matka-silk-saree-01-img1.webp" },
+  { name: "Pocket Sequins Mulberry", href: "/shop?category=Pocket+Sequins+Mulberry", image: "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img1.webp" },
 ];
 
 function VideoCard({ src, thumb, label }: { src: string; thumb: string; label: string }) {

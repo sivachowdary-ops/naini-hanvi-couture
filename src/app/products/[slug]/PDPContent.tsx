@@ -59,7 +59,7 @@ export function PDPContent({ product }: PDPContentProps) {
     });
   };
 
-  const whatsappProductUrl = `https://wa.me/919100050610?text=${encodeURIComponent(
+  const whatsappProductUrl = `https://wa.me/918008122236?text=${encodeURIComponent(
     `Hi! I'm interested in this product: ${product.name} (₹${product.price.toLocaleString()}). Can you share more details?`
   )}`;
 
@@ -228,7 +228,7 @@ export function PDPContent({ product }: PDPContentProps) {
               {/* Video Call & Store Visit */}
               <div className="grid grid-cols-2 gap-3">
                 <a
-                  href={`https://wa.me/919100050610?text=${encodeURIComponent(
+                  href={`https://wa.me/918008122236?text=${encodeURIComponent(
                     `Hi! I'd like to request a video call to see this product:\n📦 ${product.name} (₹${product.price.toLocaleString()})\n📂 Category: ${product.category}\n\nPlease let me know a convenient time for the video call. Thank you!`
                   )}`}
                   target="_blank"
@@ -240,7 +240,7 @@ export function PDPContent({ product }: PDPContentProps) {
                   Video Call
                 </a>
                 <a
-                  href={`https://wa.me/919100050610?text=${encodeURIComponent(
+                  href={`https://wa.me/918008122236?text=${encodeURIComponent(
                     `Hi! I'd like to visit your store to see this product in person:\n📦 ${product.name} (₹${product.price.toLocaleString()})\n📂 Category: ${product.category}\n\nCould you please share the store address and available timings? Thank you!`
                   )}`}
                   target="_blank"
@@ -252,6 +252,33 @@ export function PDPContent({ product }: PDPContentProps) {
                   Store Visit
                 </a>
               </div>
+              {/* Instagram Video Link */}
+              {product.instagramUrl && (
+                <a
+                  href={product.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 font-semibold text-xs rounded-md text-white transition-all duration-300 flex items-center justify-center gap-2 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:brightness-110 shadow-md hover:shadow-lg mt-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-instagram"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                  Watch Video on Instagram
+                </a>
+              )}
             </div>
 
             {/* Delivery estimate */}

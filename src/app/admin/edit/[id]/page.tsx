@@ -39,6 +39,7 @@ export default function AdminEditProductPage({ params }: EditPageProps) {
   const [blouseDetail, setBlouseDetail] = useState("");
   const [tagsInput, setTagsInput] = useState("");
   const [gallery, setGallery] = useState<any[]>([]);
+  const [instagramUrl, setInstagramUrl] = useState("");
 
   // Password reset states
   const [newPassword, setNewPassword] = useState("");
@@ -103,6 +104,7 @@ export default function AdminEditProductPage({ params }: EditPageProps) {
           setBlouseDetail(p.blouseDetail || "");
           setTagsInput(p.tags?.join(", ") || "");
           setGallery(p.gallery || []);
+          setInstagramUrl(p.instagramUrl || "");
         } else {
           setError("Product not found.");
         }
@@ -134,6 +136,7 @@ export default function AdminEditProductPage({ params }: EditPageProps) {
           setBlouseDetail(product.blouseDetail || "");
           setTagsInput(product.tags?.join(", ") || "");
           setGallery(product.gallery || []);
+          setInstagramUrl(product.instagramUrl || "");
 
           // Query unique categories in database
           const { data: catData } = await supabase.from("products").select("category");
@@ -216,6 +219,7 @@ export default function AdminEditProductPage({ params }: EditPageProps) {
         length_width: lengthWidth || null,
         blouse_detail: blouseDetail || null,
         tags: tagsArray,
+        instagram_url: instagramUrl || null,
         updated_at: new Date().toISOString(),
       };
 
@@ -473,6 +477,20 @@ export default function AdminEditProductPage({ params }: EditPageProps) {
                       placeholder="e.g. Unstitched piece"
                     />
                   </div>
+                </div>
+
+                {/* Instagram URL */}
+                <div className="mt-4">
+                  <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                    Instagram Video Link (Reel / Post URL)
+                  </label>
+                  <input
+                    type="url"
+                    value={instagramUrl}
+                    onChange={(e) => setInstagramUrl(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-amber-500 focus:border-amber-500 text-sm"
+                    placeholder="e.g. https://www.instagram.com/reel/C8..."
+                  />
                 </div>
 
                 {/* Toggles */}

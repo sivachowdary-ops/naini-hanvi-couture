@@ -74,7 +74,7 @@ export default function CheckoutPage() {
     () =>
       cartState.items
         .map((item) => {
-          const product = MOCK_PRODUCTS.find((p) => p.id === item.productId);
+          const product = cartState.products.find((p) => p.id === item.productId);
           if (!product) return null;
           return { ...item, product };
         })
@@ -82,9 +82,14 @@ export default function CheckoutPage() {
         productId: string;
         variantId?: string;
         quantity: number;
-        product: (typeof MOCK_PRODUCTS)[number];
+        product: (typeof cartState.products)[number];
       }[],
-    [cartState.items]
+    [cartState.items, cartState.products]
+  );
+
+  const hasOutOfStockItems = useMemo(
+    () => cartItemsWithDetails.some((item) => !item.product.inStock),
+    [cartItemsWithDetails]
   );
 
   const subtotal = cartItemsWithDetails.reduce(
@@ -179,11 +184,14 @@ export default function CheckoutPage() {
       setErrors(newErrors);
 
       if (Object.keys(newErrors).length > 0) return;
-      if (cartItemsWithDetails.length === 0) return;
+      if (hasOutOfStockItems) {
+        dispatch({ type: "SHOW_TOAST", payload: "Please remove sold out items to place your order." });
+        return;
+      }
 
       setSubmitting(true);
 
-      const orderItems = resolveCartItems(cartState.items, MOCK_PRODUCTS);
+      const orderItems = resolveCartItems(cartState.items, cartState.products);
       const subtotal = orderItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
       const totalQuantity = orderItems.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -208,7 +216,7 @@ export default function CheckoutPage() {
               email: formData.email || null,
               notes: formData.orderNotes || null,
               items: cartState.items.map((item) => {
-                const p = MOCK_PRODUCTS.find((prod) => prod.id === item.productId);
+                const p = cartState.products.find((prod) => prod.id === item.productId);
                 return {
                   id: item.productId,
                   name: p ? p.name : "Unknown Saree",
@@ -410,12 +418,17 @@ export default function CheckoutPage() {
 
           {/* Submit - mobile only (desktop has sticky sidebar) */}
           <div className="lg:hidden">
+            {hasOutOfStockItems && (
+              <p className="text-xs text-error font-medium text-center mb-3">
+                Your cart contains sold out items. Please remove them to place your order.
+              </p>
+            )}
             <button
               type="submit"
-              disabled={!isFormValid || submitting}
+              disabled={!isFormValid || submitting || hasOutOfStockItems}
               className={cn(
                 "w-full py-4 text-sm font-semibold tracking-wide transition-colors flex items-center justify-center gap-2",
-                isFormValid && !submitting
+                isFormValid && !submitting && !hasOutOfStockItems
                   ? "bg-rose-deep text-cream-base hover:bg-rose-accent"
                   : "bg-cream-alt text-muted-text cursor-not-allowed"
               )}
@@ -504,15 +517,20 @@ export default function CheckoutPage() {
               </span>
             </div>
 
+            {hasOutOfStockItems && (
+              <p className="text-xs text-error font-medium text-center">
+                Your cart contains sold out items.
+              </p>
+            )}
             {/* Desktop Submit Button */}
             <button
               type="submit"
               form=""
-              disabled={!isFormValid || submitting}
+              disabled={!isFormValid || submitting || hasOutOfStockItems}
               onClick={handleSubmit}
               className={cn(
                 "hidden lg:flex w-full py-3.5 text-sm font-semibold tracking-wide transition-colors items-center justify-center gap-2",
-                isFormValid && !submitting
+                isFormValid && !submitting && !hasOutOfStockItems
                   ? "bg-rose-deep text-cream-base hover:bg-rose-accent"
                   : "bg-cream-alt text-muted-text cursor-not-allowed"
               )}

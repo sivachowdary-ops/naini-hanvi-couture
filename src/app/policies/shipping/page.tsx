@@ -54,7 +54,7 @@ export default function ShippingPolicyPage() {
                 Tracking Your Order
               </h2>
               <p>
-                Once your order is shipped, we will share a tracking link via email and WhatsApp. You can use this link to monitor the real-time status of your delivery. For any queries, contact us on WhatsApp at +91 91000 50610.
+                Once your order is shipped, we will share a tracking link via email and WhatsApp. You can use this link to monitor the real-time status of your delivery. For any queries, contact us on WhatsApp at +91 80081 22236.
               </p>
             </div>
 

@@ -34,6 +34,7 @@ export type Product = {
   sourceFiles?: string[];
   selectionReason?: string[];
   matchedVideo?: string | null;
+  instagramUrl?: string;
 };
 
 export type CartLineItem = {
@@ -137,8 +138,8 @@ export const MOCK_PRODUCTS: Product[] = [
       },
       {
         "type": "video",
-        "src": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4",
-        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp",
+        "src": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
+        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp",
         "alt": "Malai Cottons Saree 02 - Video"
       }
     ],
@@ -152,7 +153,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5819.HEIC: score 0.774 (res: 3212x5712)",
       "IMG_5820.HEIC: score 0.536 (res: 2268x4032)"
     ],
-    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4"
+    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4"
   },
   {
     "id": "prod-3",
@@ -312,12 +313,6 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
         "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
         "alt": "Malai Cottons Saree 06 - View 2"
-      },
-      {
-        "type": "video",
-        "src": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
-        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp",
-        "alt": "Malai Cottons Saree 06 - Video"
       }
     ],
     "variants": [],
@@ -330,7 +325,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5829.HEIC: score 0.780 (res: 3212x5712)",
       "IMG_5830.HEIC: score 0.773 (res: 3212x5712)"
     ],
-    "matchedVideo": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4"
+    "matchedVideo": null
   },
   {
     "id": "prod-7",
@@ -374,38 +369,6 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     "id": "prod-8",
-    "slug": "malai-cottons-saree-08",
-    "name": "Malai Cottons Saree 08",
-    "brand": "Naini Hanvi Couture",
-    "category": "Malai Cottons",
-    "price": 3659,
-    "inStock": true,
-    "isBestSeller": false,
-    "badge": null,
-    "fabric": "Malai Cottons",
-    "lengthWidth": "5.5 meters, 1.1 meters width",
-    "blouseDetail": "Unstitched blouse piece included (0.8m)",
-    "description": "A beautiful Malai Cottons saree from Naini Hanvi Couture's curated collection. Perfect for both casual and festive occasions.",
-    "gallery": [
-      {
-        "type": "image",
-        "src": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
-        "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
-        "alt": "Malai Cottons Saree 08 - View 1"
-      }
-    ],
-    "variants": [],
-    "tags": [],
-    "sourceFiles": [
-      "IMG_5834.HEIC"
-    ],
-    "selectionReason": [
-      "IMG_5834.HEIC: score 0.782 (res: 3212x5712)"
-    ],
-    "matchedVideo": null
-  },
-  {
-    "id": "prod-9",
     "slug": "muslin-sequence-saree-01",
     "name": "Muslin Sequence Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -447,7 +410,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-10",
+    "id": "prod-9",
     "slug": "muslin-sequence-saree-02",
     "name": "Muslin Sequence Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -489,7 +452,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-11",
+    "id": "prod-10",
     "slug": "muslin-sequence-saree-03",
     "name": "Muslin Sequence Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -531,7 +494,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-12",
+    "id": "prod-11",
     "slug": "silk-kota-saree-01",
     "name": "Silk Kota Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -573,7 +536,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-13",
+    "id": "prod-12",
     "slug": "silk-kota-saree-02",
     "name": "Silk Kota Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -615,7 +578,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-14",
+    "id": "prod-13",
     "slug": "silk-kota-saree-03",
     "name": "Silk Kota Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -659,7 +622,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-15",
+    "id": "prod-14",
     "slug": "silk-kota-saree-04",
     "name": "Silk Kota Saree 04",
     "brand": "Naini Hanvi Couture",
@@ -699,7 +662,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-16",
+    "id": "prod-15",
     "slug": "ajarakh-modal-silk-saree-01",
     "name": "Ajarakh Modal Silk Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -741,7 +704,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-17",
+    "id": "prod-16",
     "slug": "ajarakh-modal-silk-saree-02",
     "name": "Ajarakh Modal Silk Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -783,7 +746,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-18",
+    "id": "prod-17",
     "slug": "ajarakh-modal-silk-saree-03",
     "name": "Ajarakh Modal Silk Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -823,7 +786,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-19",
+    "id": "prod-18",
     "slug": "ajarakh-modal-silk-saree-04",
     "name": "Ajarakh Modal Silk Saree 04",
     "brand": "Naini Hanvi Couture",
@@ -865,7 +828,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-20",
+    "id": "prod-19",
     "slug": "ajarakh-modal-silk-saree-05",
     "name": "Ajarakh Modal Silk Saree 05",
     "brand": "Naini Hanvi Couture",
@@ -907,7 +870,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-21",
+    "id": "prod-20",
     "slug": "ajarakh-modal-silk-saree-06",
     "name": "Ajarakh Modal Silk Saree 06",
     "brand": "Naini Hanvi Couture",
@@ -949,7 +912,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-22",
+    "id": "prod-21",
     "slug": "ajarakh-modal-silk-saree-07",
     "name": "Ajarakh Modal Silk Saree 07",
     "brand": "Naini Hanvi Couture",
@@ -989,7 +952,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-23",
+    "id": "prod-22",
     "slug": "ajarakh-modal-silk-saree-08",
     "name": "Ajarakh Modal Silk Saree 08",
     "brand": "Naini Hanvi Couture",
@@ -1029,7 +992,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-24",
+    "id": "prod-23",
     "slug": "ajarakh-modal-silk-saree-09",
     "name": "Ajarakh Modal Silk Saree 09",
     "brand": "Naini Hanvi Couture",
@@ -1069,7 +1032,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-25",
+    "id": "prod-24",
     "slug": "jamdani-saree-01",
     "name": "Jamdani Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -1111,7 +1074,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-26",
+    "id": "prod-25",
     "slug": "jamdani-saree-02",
     "name": "Jamdani Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -1153,7 +1116,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-27",
+    "id": "prod-26",
     "slug": "jamdani-saree-03",
     "name": "Jamdani Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -1193,7 +1156,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-28",
+    "id": "prod-27",
     "slug": "jamdani-saree-04",
     "name": "Jamdani Saree 04",
     "brand": "Naini Hanvi Couture",
@@ -1233,7 +1196,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-29",
+    "id": "prod-28",
     "slug": "jamdani-saree-05",
     "name": "Jamdani Saree 05",
     "brand": "Naini Hanvi Couture",
@@ -1273,7 +1236,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-30",
+    "id": "prod-29",
     "slug": "jamdani-saree-06",
     "name": "Jamdani Saree 06",
     "brand": "Naini Hanvi Couture",
@@ -1315,7 +1278,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-31",
+    "id": "prod-30",
     "slug": "premium-kota-saree-01",
     "name": "Premium Kota Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -1355,7 +1318,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-32",
+    "id": "prod-31",
     "slug": "premium-kota-saree-02",
     "name": "Premium Kota Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -1395,7 +1358,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-33",
+    "id": "prod-32",
     "slug": "premium-kota-saree-03",
     "name": "Premium Kota Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -1435,7 +1398,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-34",
+    "id": "prod-33",
     "slug": "premium-kota-saree-04",
     "name": "Premium Kota Saree 04",
     "brand": "Naini Hanvi Couture",
@@ -1477,7 +1440,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-35",
+    "id": "prod-34",
     "slug": "premium-kota-saree-05",
     "name": "Premium Kota Saree 05",
     "brand": "Naini Hanvi Couture",
@@ -1519,7 +1482,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-36",
+    "id": "prod-35",
     "slug": "premium-kota-saree-06",
     "name": "Premium Kota Saree 06",
     "brand": "Naini Hanvi Couture",
@@ -1561,7 +1524,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-37",
+    "id": "prod-36",
     "slug": "premium-kota-saree-07",
     "name": "Premium Kota Saree 07",
     "brand": "Naini Hanvi Couture",
@@ -1603,7 +1566,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-38",
+    "id": "prod-37",
     "slug": "swan-jamdani-saree-01",
     "name": "Swan Jamdani Saree 01",
     "brand": "Naini Hanvi Couture",
@@ -1645,7 +1608,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-39",
+    "id": "prod-38",
     "slug": "swan-jamdani-saree-02",
     "name": "Swan Jamdani Saree 02",
     "brand": "Naini Hanvi Couture",
@@ -1685,7 +1648,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-40",
+    "id": "prod-39",
     "slug": "swan-jamdani-saree-03",
     "name": "Swan Jamdani Saree 03",
     "brand": "Naini Hanvi Couture",
@@ -1729,7 +1692,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-41",
+    "id": "prod-40",
     "slug": "swan-jamdani-saree-04",
     "name": "Swan Jamdani Saree 04",
     "brand": "Naini Hanvi Couture",
@@ -1769,7 +1732,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "matchedVideo": null
   },
   {
-    "id": "prod-42",
+    "id": "prod-41",
     "slug": "swan-jamdani-saree-05",
     "name": "Swan Jamdani Saree 05",
     "brand": "Naini Hanvi Couture",
@@ -1807,6 +1770,166 @@ export const MOCK_PRODUCTS: Product[] = [
       "IMG_5871.HEIC: score 1.000 (res: 4284x5712)"
     ],
     "matchedVideo": null
+  },
+  {
+    "id": "prod-50",
+    "slug": "matka-silk-saree-01",
+    "name": "Matka Silk Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Matka Silk",
+    "price": 3250,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Matka Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A premium Matka Silk saree featuring rich woven texture with traditional motifs and a contrasting border. Exquisite handloom quality from Naini Hanvi Couture.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/matka-silk/matka-silk-saree-01-img1.webp",
+        "thumbnail": "/catalog/matka-silk/matka-silk-saree-01-img1.webp",
+        "alt": "Matka Silk Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/matka-silk/matka-silk-saree-01-img2.webp",
+        "thumbnail": "/catalog/matka-silk/matka-silk-saree-01-img2.webp",
+        "alt": "Matka Silk Saree 01 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_6221.HEIC",
+      "IMG_6222.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_6221.HEIC: converted to sRGB WebP",
+      "IMG_6222.HEIC: converted to sRGB WebP"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-51",
+    "slug": "matka-silk-saree-02",
+    "name": "Matka Silk Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Matka Silk",
+    "price": 3450,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Matka Silk",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "An elegant Matka Silk saree featuring a beautifully textured body and intricate borders. Lightweight, comfortable, and perfect for ethnic occasions.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
+        "thumbnail": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
+        "alt": "Matka Silk Saree 02 - View 1"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_6223.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_6223.HEIC: converted to sRGB WebP"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-52",
+    "slug": "pocket-sequins-mulberry-saree-01",
+    "name": "Pocket Sequins Mulberry Saree 01",
+    "brand": "Naini Hanvi Couture",
+    "category": "Pocket Sequins Mulberry",
+    "price": 4250,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Pocket Sequins Mulberry",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "A stunning yellow Pocket Sequins Mulberry saree with delicate sequin embellishments. Offers a beautiful drape and contemporary appeal.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img1.webp",
+        "thumbnail": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img1.webp",
+        "alt": "Pocket Sequins Mulberry Saree 01 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img2.webp",
+        "thumbnail": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img2.webp",
+        "alt": "Pocket Sequins Mulberry Saree 01 - View 2"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img3.webp",
+        "thumbnail": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-01-img3.webp",
+        "alt": "Pocket Sequins Mulberry Saree 01 - View 3"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_6216.HEIC",
+      "IMG_6217.HEIC",
+      "IMG_6218.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_6216.HEIC: converted to sRGB WebP",
+      "IMG_6217.HEIC: converted to sRGB WebP",
+      "IMG_6218.HEIC: converted to sRGB WebP"
+    ],
+    "matchedVideo": null
+  },
+  {
+    "id": "prod-53",
+    "slug": "pocket-sequins-mulberry-saree-02",
+    "name": "Pocket Sequins Mulberry Saree 02",
+    "brand": "Naini Hanvi Couture",
+    "category": "Pocket Sequins Mulberry",
+    "price": 4500,
+    "inStock": true,
+    "isBestSeller": false,
+    "badge": null,
+    "fabric": "Pocket Sequins Mulberry",
+    "lengthWidth": "5.5 meters, 1.1 meters width",
+    "blouseDetail": "Unstitched blouse piece included (0.8m)",
+    "description": "An attractive green Pocket Sequins Mulberry saree adorned with shimmering sequins in neat lines. Ideal for evening wear and special celebrations.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-02-img1.webp",
+        "thumbnail": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-02-img1.webp",
+        "alt": "Pocket Sequins Mulberry Saree 02 - View 1"
+      },
+      {
+        "type": "image",
+        "src": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-02-img2.webp",
+        "thumbnail": "/catalog/pocket-sequins-mulberry/pocket-sequins-mulberry-saree-02-img2.webp",
+        "alt": "Pocket Sequins Mulberry Saree 02 - View 2"
+      }
+    ],
+    "variants": [],
+    "tags": [],
+    "sourceFiles": [
+      "IMG_6219.HEIC",
+      "IMG_6220.HEIC"
+    ],
+    "selectionReason": [
+      "IMG_6219.HEIC: converted to sRGB WebP",
+      "IMG_6220.HEIC: converted to sRGB WebP"
+    ],
+    "matchedVideo": null
   }
 ];
 
@@ -1830,6 +1953,7 @@ export function mapDbProductToProduct(dbProduct: any): Product {
     gallery: Array.isArray(dbProduct.gallery) ? dbProduct.gallery : [],
     variants: Array.isArray(dbProduct.variants) ? dbProduct.variants : [],
     tags: Array.isArray(dbProduct.tags) ? dbProduct.tags : [],
+    instagramUrl: dbProduct.instagram_url || undefined,
   };
 }
 

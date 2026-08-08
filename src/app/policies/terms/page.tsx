@@ -90,7 +90,7 @@ export default function TermsPage() {
                 Contact
               </h2>
               <p>
-                For any questions regarding these Terms of Service, please contact us at hello@nainihanvi.com or via WhatsApp at +91 91000 50610.
+                For any questions regarding these Terms of Service, please contact us at chegondisoujanya@gmail.com or via WhatsApp at +91 80081 22236.
               </p>
             </div>
           </div>

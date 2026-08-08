@@ -39,7 +39,7 @@ export function MobileBottomNav() {
 
         {/* WhatsApp Button */}
         <a 
-          href="https://wa.me/919100050610?text=Hi,%20I%20have%20a%20question%20about%20Naini%20Hanvi%20Couture%20products"
+          href="https://wa.me/918008122236?text=Hi,%20I%20have%20a%20question%20about%20Naini%20Hanvi%20Couture%20products"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center w-full h-full space-y-1 text-charcoal-text hover:text-success transition-colors"

@@ -12,7 +12,8 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
   // Find primary image and secondary image if available
   const images = product.gallery.filter((g) => g.type === "image");
   const primaryImage = images[0]?.src || "/placeholder.jpg";
-  const secondaryImage = images[1]?.src || primaryImage;
+  const hasSecondary = images.length > 1;
+  const secondaryImage = hasSecondary ? images[1]?.src : null;
 
   return (
     <div className="group flex flex-col relative h-full w-full max-w-[320px] mx-auto bg-cream-base">
@@ -37,16 +38,20 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           alt={product.name}
           fill
           priority={priority}
-          className="object-cover transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"
+          className={`object-cover transition-opacity duration-500 pointer-events-none ${
+            hasSecondary ? "group-hover:opacity-0" : ""
+          }`}
           sizes="(max-width: 768px) 50vw, 25vw"
         />
-        <Image
-          src={secondaryImage}
-          alt={`${product.name} hover`}
-          fill
-          className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 pointer-events-none"
-          sizes="(max-width: 768px) 50vw, 25vw"
-        />
+        {hasSecondary && secondaryImage && (
+          <Image
+            src={secondaryImage}
+            alt={`${product.name} hover`}
+            fill
+            className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 pointer-events-none"
+            sizes="(max-width: 768px) 50vw, 25vw"
+          />
+        )}
 
         {/* Quick Add overlay */}
         {product.inStock && (

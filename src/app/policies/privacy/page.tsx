@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
                 Your Rights
               </h2>
               <p>
-                You have the right to access, correct, or delete your personal data. To exercise these rights or for any privacy-related queries, please contact us at hello@nainihanvi.com or via WhatsApp at +91 91000 50610.
+                You have the right to access, correct, or delete your personal data. To exercise these rights or for any privacy-related queries, please contact us at chegondisoujanya@gmail.com or via WhatsApp at +91 80081 22236.
               </p>
             </div>
 

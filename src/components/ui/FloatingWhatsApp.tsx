@@ -5,7 +5,7 @@ import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 export function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/919100050610?text=Hi,%20I%20have%20a%20question%20about%20Naini%20Hanvi%20Couture%20products"
+      href="https://wa.me/918008122236?text=Hi,%20I%20have%20a%20question%20about%20Naini%20Hanvi%20Couture%20products"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-20 lg:bottom-8 right-4 lg:right-8 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] transition-all duration-300 flex items-center justify-center group"

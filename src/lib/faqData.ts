@@ -7,7 +7,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "How do I place an order?",
     answer:
-      "[Client to confirm] Browse our collection and add your favourite items to the cart. Proceed to checkout, fill in your shipping details, and complete your payment. You will receive an order confirmation via email and WhatsApp. Need help? Reach out to us on WhatsApp at +91 91000 50610.",
+      "[Client to confirm] Browse our collection and add your favourite items to the cart. Proceed to checkout, fill in your shipping details, and complete your payment. You will receive an order confirmation via email and WhatsApp. Need help? Reach out to us on WhatsApp at +91 80081 22236.",
   },
   {
     question: "What payment methods do you accept?",
@@ -32,7 +32,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "How can I track my order?",
     answer:
-      "[Client to confirm] Once your order is shipped, you will receive a tracking link via email and WhatsApp. You can also reach out to us on WhatsApp at +91 91000 50610 with your order number for a quick update.",
+      "[Client to confirm] Once your order is shipped, you will receive a tracking link via email and WhatsApp. You can also reach out to us on WhatsApp at +91 80081 22236 with your order number for a quick update.",
   },
   {
     question: "Do you provide fabric care instructions?",

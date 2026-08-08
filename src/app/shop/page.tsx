@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { Suspense } from "react";
 import { ShopContent } from "./ShopContent";
 
-export const revalidate = 300; // 5 minutes
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Shop All Sarees | Naini Hanvi Couture",

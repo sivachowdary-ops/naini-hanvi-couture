@@ -3,6 +3,23 @@ Malai cottons-20260720T093242Z-1-001/
 Muslin sequence-20260720T093241Z-1-001/
 Silk kota-20260720T093241Z-1-001/
 raw_assets/
+Ajarakh ModalSilk-20260730T154352Z-1-001/
+Ajarakh ModalSilk-20260807T155956Z-1-001/
+Jamdani-20260730T154353Z-1-001/
+Jamdani-20260807T160553Z-1-001/
+Malai cottons-20260807T160303Z-1-001/
+Muslin sequence-20260807T160301Z-1-001/
+Premium kota-20260730T154351Z-1-001/
+Premium kota-20260807T155956Z-1-001/
+Silk kota-20260807T160002Z-1-001/
+Swan Jamdani-20260730T154353Z-1-001/
+Swan Jamdani-20260807T155957Z-1-001/
+exported+*.mp4
+/*.mp4
+/*.MOV
+/*.mov
+/*.HEIC
+/*.heic
 
 # Ignore script dependencies
 scripts/node_modules/

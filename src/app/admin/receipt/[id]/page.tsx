@@ -14,7 +14,7 @@ const MOCK_ORDERS: Order[] = [
   {
     id: "1",
     customer_name: "Siva Chowdary",
-    mobile: "9100050610",
+    mobile: "8008122236",
     address: "Door No 4-12, Heritage Residency, Near Benz Circle",
     state: "Andhra Pradesh",
     city: "Vijayawada",
@@ -231,7 +231,7 @@ export default function ReceiptPrintPage({ params }: ReceiptPageProps) {
         <div className="text-center space-y-1 mb-3">
           <h1 className="text-sm font-extrabold uppercase tracking-wider">NAINI HANVI COUTURE</h1>
           <p className="text-[10px] font-extrabold uppercase">A Saree House</p>
-          <p className="text-[9px] font-extrabold">Mob: +91 91000 50610</p>
+          <p className="text-[9px] font-extrabold">Mob: +91 80081 22236</p>
           <p className="text-[8px] font-extrabold tracking-tight">broulspfcjdajpdbcnnv.supabase.co</p>
         </div>
 

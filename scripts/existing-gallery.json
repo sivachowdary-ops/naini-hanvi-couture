@@ -1,0 +1,880 @@
+{
+  "Malai Cottons": [
+    {
+      "slug": "malai-cottons-saree-01",
+      "name": "Malai Cottons Saree 01",
+      "video": "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4",
+      "gallerySize": 3,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-01-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-img1.webp",
+          "alt": "Malai Cottons Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-img2.webp",
+          "alt": "Malai Cottons Saree 01 - View 2"
+        },
+        {
+          "type": "video",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-01-video.mp4",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-01-poster.webp",
+          "alt": "Malai Cottons Saree 01 - Video"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-02",
+      "name": "Malai Cottons Saree 02",
+      "video": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4",
+      "gallerySize": 3,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-06-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-06-img1.webp",
+          "alt": "Malai Cottons Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-07-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-07-img1.webp",
+          "alt": "Malai Cottons Saree 02 - View 2"
+        },
+        {
+          "type": "video",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-03-video.mp4",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-03-poster.webp",
+          "alt": "Malai Cottons Saree 02 - Video"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-03",
+      "name": "Malai Cottons Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-08-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-08-img1.webp",
+          "alt": "Malai Cottons Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-09-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-09-img1.webp",
+          "alt": "Malai Cottons Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-04",
+      "name": "Malai Cottons Saree 04",
+      "video": "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4",
+      "gallerySize": 3,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-10-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-10-img1.webp",
+          "alt": "Malai Cottons Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-11-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-11-img1.webp",
+          "alt": "Malai Cottons Saree 04 - View 2"
+        },
+        {
+          "type": "video",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-04-video.mp4",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-04-poster.webp",
+          "alt": "Malai Cottons Saree 04 - Video"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-05",
+      "name": "Malai Cottons Saree 05",
+      "video": "/catalog/malai-cottons/malai-cottons-saree-05-video.mp4",
+      "gallerySize": 3,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-12-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-12-img1.webp",
+          "alt": "Malai Cottons Saree 05 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-13-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-13-img1.webp",
+          "alt": "Malai Cottons Saree 05 - View 2"
+        },
+        {
+          "type": "video",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-05-video.mp4",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-05-poster.webp",
+          "alt": "Malai Cottons Saree 05 - Video"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-06",
+      "name": "Malai Cottons Saree 06",
+      "video": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
+      "gallerySize": 3,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-14-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-14-img1.webp",
+          "alt": "Malai Cottons Saree 06 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-15-img1.webp",
+          "alt": "Malai Cottons Saree 06 - View 2"
+        },
+        {
+          "type": "video",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-02-video.mp4",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-02-poster.webp",
+          "alt": "Malai Cottons Saree 06 - Video"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-07",
+      "name": "Malai Cottons Saree 07",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-16-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-16-img1.webp",
+          "alt": "Malai Cottons Saree 07 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-17-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-17-img1.webp",
+          "alt": "Malai Cottons Saree 07 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "malai-cottons-saree-08",
+      "name": "Malai Cottons Saree 08",
+      "video": null,
+      "gallerySize": 1,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
+          "thumbnail": "/catalog/malai-cottons/malai-cottons-saree-18-img1.webp",
+          "alt": "Malai Cottons Saree 08 - View 1"
+        }
+      ]
+    }
+  ],
+  "Muslin Sequence": [
+    {
+      "slug": "muslin-sequence-saree-01",
+      "name": "Muslin Sequence Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-20-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-20-img1.webp",
+          "alt": "Muslin Sequence Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-21-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-21-img1.webp",
+          "alt": "Muslin Sequence Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "muslin-sequence-saree-02",
+      "name": "Muslin Sequence Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-23-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-23-img1.webp",
+          "alt": "Muslin Sequence Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-24-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-24-img1.webp",
+          "alt": "Muslin Sequence Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "muslin-sequence-saree-03",
+      "name": "Muslin Sequence Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-26-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-26-img1.webp",
+          "alt": "Muslin Sequence Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/muslin-sequence/muslin-sequence-saree-27-img1.webp",
+          "thumbnail": "/catalog/muslin-sequence/muslin-sequence-saree-27-img1.webp",
+          "alt": "Muslin Sequence Saree 03 - View 2"
+        }
+      ]
+    }
+  ],
+  "Silk Kota": [
+    {
+      "slug": "silk-kota-saree-01",
+      "name": "Silk Kota Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-29-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-29-img1.webp",
+          "alt": "Silk Kota Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-30-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-30-img1.webp",
+          "alt": "Silk Kota Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "silk-kota-saree-02",
+      "name": "Silk Kota Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-32-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-32-img1.webp",
+          "alt": "Silk Kota Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-33-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-33-img1.webp",
+          "alt": "Silk Kota Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "silk-kota-saree-03",
+      "name": "Silk Kota Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-35-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-35-img1.webp",
+          "alt": "Silk Kota Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-35-img2.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-35-img2.webp",
+          "alt": "Silk Kota Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "silk-kota-saree-04",
+      "name": "Silk Kota Saree 04",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-38-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-38-img1.webp",
+          "alt": "Silk Kota Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/silk-kota/silk-kota-saree-39-img1.webp",
+          "thumbnail": "/catalog/silk-kota/silk-kota-saree-39-img1.webp",
+          "alt": "Silk Kota Saree 04 - View 2"
+        }
+      ]
+    }
+  ],
+  "Ajarakh Modal Silk": [
+    {
+      "slug": "ajarakh-modal-silk-saree-01",
+      "name": "Ajarakh Modal Silk Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-01-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-01-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-02-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-02-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-02",
+      "name": "Ajarakh Modal Silk Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-04-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-04-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-05-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-05-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-03",
+      "name": "Ajarakh Modal Silk Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-07-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-07-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-08-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-08-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-04",
+      "name": "Ajarakh Modal Silk Saree 04",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-09-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-09-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-10-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-10-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 04 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-05",
+      "name": "Ajarakh Modal Silk Saree 05",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-12-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-12-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 05 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-13-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-13-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 05 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-06",
+      "name": "Ajarakh Modal Silk Saree 06",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-15-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-15-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 06 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-16-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-16-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 06 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-07",
+      "name": "Ajarakh Modal Silk Saree 07",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-18-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-18-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 07 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-19-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-19-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 07 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-08",
+      "name": "Ajarakh Modal Silk Saree 08",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-20-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-20-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 08 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-21-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-21-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 08 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "ajarakh-modal-silk-saree-09",
+      "name": "Ajarakh Modal Silk Saree 09",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-22-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-22-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 09 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-23-img1.webp",
+          "thumbnail": "/catalog/ajarakh-modal-silk/ajarakh-modal-silk-saree-23-img1.webp",
+          "alt": "Ajarakh Modal Silk Saree 09 - View 2"
+        }
+      ]
+    }
+  ],
+  "Jamdani": [
+    {
+      "slug": "jamdani-saree-01",
+      "name": "Jamdani Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-01-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-01-img1.webp",
+          "alt": "Jamdani Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-02-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-02-img1.webp",
+          "alt": "Jamdani Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "jamdani-saree-02",
+      "name": "Jamdani Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-04-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-04-img1.webp",
+          "alt": "Jamdani Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-05-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-05-img1.webp",
+          "alt": "Jamdani Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "jamdani-saree-03",
+      "name": "Jamdani Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-07-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-07-img1.webp",
+          "alt": "Jamdani Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-08-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-08-img1.webp",
+          "alt": "Jamdani Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "jamdani-saree-04",
+      "name": "Jamdani Saree 04",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-09-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-09-img1.webp",
+          "alt": "Jamdani Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-10-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-10-img1.webp",
+          "alt": "Jamdani Saree 04 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "jamdani-saree-05",
+      "name": "Jamdani Saree 05",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-11-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-11-img1.webp",
+          "alt": "Jamdani Saree 05 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-11-img2.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-11-img2.webp",
+          "alt": "Jamdani Saree 05 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "jamdani-saree-06",
+      "name": "Jamdani Saree 06",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-12-img1.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-12-img1.webp",
+          "alt": "Jamdani Saree 06 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/jamdani/jamdani-saree-12-img2.webp",
+          "thumbnail": "/catalog/jamdani/jamdani-saree-12-img2.webp",
+          "alt": "Jamdani Saree 06 - View 2"
+        }
+      ]
+    }
+  ],
+  "Premium Kota": [
+    {
+      "slug": "premium-kota-saree-01",
+      "name": "Premium Kota Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-01-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-01-img1.webp",
+          "alt": "Premium Kota Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-02-img1.webp",
+          "alt": "Premium Kota Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-02",
+      "name": "Premium Kota Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-03-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-03-img1.webp",
+          "alt": "Premium Kota Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-04-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-04-img1.webp",
+          "alt": "Premium Kota Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-03",
+      "name": "Premium Kota Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-05-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-05-img1.webp",
+          "alt": "Premium Kota Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-06-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-06-img1.webp",
+          "alt": "Premium Kota Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-04",
+      "name": "Premium Kota Saree 04",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-07-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-07-img1.webp",
+          "alt": "Premium Kota Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-08-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-08-img1.webp",
+          "alt": "Premium Kota Saree 04 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-05",
+      "name": "Premium Kota Saree 05",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-10-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-10-img1.webp",
+          "alt": "Premium Kota Saree 05 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-10-img2.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-10-img2.webp",
+          "alt": "Premium Kota Saree 05 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-06",
+      "name": "Premium Kota Saree 06",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-12-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-12-img1.webp",
+          "alt": "Premium Kota Saree 06 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-13-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-13-img1.webp",
+          "alt": "Premium Kota Saree 06 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "premium-kota-saree-07",
+      "name": "Premium Kota Saree 07",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-15-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-15-img1.webp",
+          "alt": "Premium Kota Saree 07 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/premium-kota/premium-kota-saree-16-img1.webp",
+          "thumbnail": "/catalog/premium-kota/premium-kota-saree-16-img1.webp",
+          "alt": "Premium Kota Saree 07 - View 2"
+        }
+      ]
+    }
+  ],
+  "Swan Jamdani": [
+    {
+      "slug": "swan-jamdani-saree-01",
+      "name": "Swan Jamdani Saree 01",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-01-img1.webp",
+          "alt": "Swan Jamdani Saree 01 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-02-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-02-img1.webp",
+          "alt": "Swan Jamdani Saree 01 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "swan-jamdani-saree-02",
+      "name": "Swan Jamdani Saree 02",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-04-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-04-img1.webp",
+          "alt": "Swan Jamdani Saree 02 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-05-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-05-img1.webp",
+          "alt": "Swan Jamdani Saree 02 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "swan-jamdani-saree-03",
+      "name": "Swan Jamdani Saree 03",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-06-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-06-img1.webp",
+          "alt": "Swan Jamdani Saree 03 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-07-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-07-img1.webp",
+          "alt": "Swan Jamdani Saree 03 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "swan-jamdani-saree-04",
+      "name": "Swan Jamdani Saree 04",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-10-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-10-img1.webp",
+          "alt": "Swan Jamdani Saree 04 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-11-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-11-img1.webp",
+          "alt": "Swan Jamdani Saree 04 - View 2"
+        }
+      ]
+    },
+    {
+      "slug": "swan-jamdani-saree-05",
+      "name": "Swan Jamdani Saree 05",
+      "video": null,
+      "gallerySize": 2,
+      "galleryItems": [
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-12-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-12-img1.webp",
+          "alt": "Swan Jamdani Saree 05 - View 1"
+        },
+        {
+          "type": "image",
+          "src": "/catalog/swan-jamdani/swan-jamdani-saree-13-img1.webp",
+          "thumbnail": "/catalog/swan-jamdani/swan-jamdani-saree-13-img1.webp",
+          "alt": "Swan Jamdani Saree 05 - View 2"
+        }
+      ]
+    }
+  ]
+}

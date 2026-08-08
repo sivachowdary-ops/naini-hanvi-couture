@@ -12,7 +12,7 @@ function CartPageContent() {
 
   const cartItemsWithDetails = state.items
     .map((item) => {
-      const product = MOCK_PRODUCTS.find((p) => p.id === item.productId);
+      const product = state.products.find((p) => p.id === item.productId);
       if (!product) return null;
       return { ...item, product };
     })
@@ -20,8 +20,10 @@ function CartPageContent() {
     productId: string;
     variantId?: string;
     quantity: number;
-    product: (typeof MOCK_PRODUCTS)[number];
+    product: (typeof state.products)[number];
   }[];
+
+  const hasOutOfStockItems = cartItemsWithDetails.some((item) => !item.product.inStock);
 
   const subtotal = cartItemsWithDetails.reduce(
     (sum, item) => sum + item.product.price * item.quantity,
@@ -36,6 +38,12 @@ function CartPageContent() {
     if (newQty < 1) {
       dispatch({ type: "REMOVE_ITEM", payload: { productId, variantId } });
     } else {
+      // Check if trying to add/increase quantity for an out of stock item
+      const item = cartItemsWithDetails.find(i => i.productId === productId && i.variantId === variantId);
+      if (item && !item.product.inStock && newQty > item.quantity) {
+        dispatch({ type: "SHOW_TOAST", payload: "Cannot add more. Item is out of stock." });
+        return;
+      }
       dispatch({
         type: "UPDATE_QUANTITY",
         payload: { productId, variantId, quantity: newQty },
@@ -126,12 +134,19 @@ function CartPageContent() {
                   <div className="flex flex-col gap-3 lg:contents">
                     {/* Name & Price (mobile combined) */}
                     <div className="lg:hidden">
-                      <Link
-                        href={`/products/${item.product.slug}`}
-                        className="font-serif text-base font-medium text-charcoal-text hover:text-rose-accent transition-colors line-clamp-2"
-                      >
-                        {item.product.name}
-                      </Link>
+                      <div className="flex items-start justify-between gap-2">
+                        <Link
+                          href={`/products/${item.product.slug}`}
+                          className="font-serif text-base font-medium text-charcoal-text hover:text-rose-accent transition-colors line-clamp-2"
+                        >
+                          {item.product.name}
+                        </Link>
+                        {!item.product.inStock && (
+                          <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 bg-error/15 text-error border border-error/20 rounded-sm">
+                            Sold Out
+                          </span>
+                        )}
+                      </div>
                       <p className="text-sm font-semibold text-rose-deep mt-1">
                         ₹{item.product.price.toLocaleString("en-IN")}
                       </p>
@@ -139,12 +154,19 @@ function CartPageContent() {
 
                     {/* Hidden on mobile, visible on desktop alongside image */}
                     <div className="hidden lg:flex lg:flex-col lg:justify-center -ml-4">
-                      <Link
-                        href={`/products/${item.product.slug}`}
-                        className="font-serif text-base font-medium text-charcoal-text hover:text-rose-accent transition-colors line-clamp-2"
-                      >
-                        {item.product.name}
-                      </Link>
+                      <div className="flex items-start justify-between gap-2">
+                        <Link
+                          href={`/products/${item.product.slug}`}
+                          className="font-serif text-base font-medium text-charcoal-text hover:text-rose-accent transition-colors line-clamp-2"
+                        >
+                          {item.product.name}
+                        </Link>
+                        {!item.product.inStock && (
+                          <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 bg-error/15 text-error border border-error/20 rounded-sm">
+                            Sold Out
+                          </span>
+                        )}
+                      </div>
                       <p className="text-sm text-muted-text mt-0.5">
                         ₹{item.product.price.toLocaleString("en-IN")} each
                       </p>
@@ -271,12 +293,26 @@ function CartPageContent() {
               </span>
             </div>
 
-            <Link
-              href="/checkout"
-              className="block w-full py-3.5 bg-rose-deep text-cream-base text-center text-sm font-semibold tracking-wide hover:bg-rose-accent transition-colors mt-2"
-            >
-              Proceed to Checkout
-            </Link>
+            {hasOutOfStockItems ? (
+              <div className="space-y-2 mt-2">
+                <button
+                  disabled
+                  className="w-full py-3.5 bg-cream-alt text-muted-text text-center text-sm font-semibold tracking-wide cursor-not-allowed border border-cream-alt"
+                >
+                  Proceed to Checkout
+                </button>
+                <p className="text-xs text-error text-center font-medium">
+                  Please remove sold out items to checkout.
+                </p>
+              </div>
+            ) : (
+              <Link
+                href="/checkout"
+                className="block w-full py-3.5 bg-rose-deep text-cream-base text-center text-sm font-semibold tracking-wide hover:bg-rose-accent transition-colors mt-2"
+              >
+                Proceed to Checkout
+              </Link>
+            )}
 
             <p className="text-xs text-muted-text text-center mt-4">
               Secure checkout via WhatsApp

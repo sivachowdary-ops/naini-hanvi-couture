@@ -38,7 +38,7 @@ const MOCK_ORDERS: Order[] = [
   {
     id: "1",
     customer_name: "Siva Chowdary",
-    mobile: "9100050610",
+    mobile: "8008122236",
     address: "Door No 4-12, Heritage Residency, Near Benz Circle",
     state: "Andhra Pradesh",
     city: "Vijayawada",

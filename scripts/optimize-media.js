@@ -15,7 +15,9 @@ if (!fs.existsSync(OUT_DIR)) {
 
 async function optimizeImage(inputFile, outputFile) {
   return sharp(inputFile)
-    .webp({ quality: 80 })
+    .toColorspace('srgb')
+    .withMetadata({ icc: 'srgb' })
+    .webp({ quality: 80, effort: 6, smartSubsample: true })
     .toFile(outputFile)
     .then(() => console.log(`Optimized image: ${path.basename(outputFile)}`))
     .catch((err) => console.error(`Error processing image ${inputFile}:`, err));
@@ -41,7 +43,7 @@ async function processAll() {
       
       const processMp4 = new Promise((resolve, reject) => {
         ffmpeg(inputPath)
-          .outputOptions(['-vcodec libx264', '-crf 28', '-preset veryfast', '-movflags +faststart', '-acodec aac', '-b:a 128k'])
+          .outputOptions(['-vcodec libx264', '-preset slow', '-crf 30', '-movflags +faststart', '-acodec aac', '-b:a 128k', '-vf scale=-2:720'])
           .save(mp4Output)
           .on('end', () => resolve())
           .on('error', (err) => reject(err));

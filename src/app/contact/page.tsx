@@ -66,7 +66,7 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919100050610"
+                href="https://wa.me/918008122236"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-cream-alt rounded-xl p-5 border border-cream-alt hover:border-rose-accent/30 transition-colors group"
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
               {/* Phone */}
               <a
-                href="tel:+919100050610"
+                href="tel:+918008122236"
                 className="flex items-center gap-4 bg-cream-alt rounded-xl p-5 border border-cream-alt hover:border-rose-accent/30 transition-colors group"
               >
                 <div className="w-12 h-12 rounded-full bg-blush-primary/30 flex items-center justify-center shrink-0">
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-charcoal-text text-sm">
-                    +91 91000 50610
+                    +91 80081 22236
                   </p>
                   <p className="text-muted-text text-sm">
                     Call us during business hours
