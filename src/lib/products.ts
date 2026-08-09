@@ -1788,8 +1788,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "type": "image",
-        "src": "/catalog/matka-silk/matka-silk-saree-01-img1.webp",
-        "thumbnail": "/catalog/matka-silk/matka-silk-saree-01-img1.webp",
+        "src": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
+        "thumbnail": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
         "alt": "Matka Silk Saree 01 - View 1"
       },
       {
@@ -1802,44 +1802,12 @@ export const MOCK_PRODUCTS: Product[] = [
     "variants": [],
     "tags": [],
     "sourceFiles": [
-      "IMG_6221.HEIC",
+      "IMG_6223.HEIC",
       "IMG_6222.HEIC"
     ],
     "selectionReason": [
-      "IMG_6221.HEIC: converted to sRGB WebP",
+      "IMG_6223.HEIC: converted to sRGB WebP",
       "IMG_6222.HEIC: converted to sRGB WebP"
-    ],
-    "matchedVideo": null
-  },
-  {
-    "id": "prod-51",
-    "slug": "matka-silk-saree-02",
-    "name": "Matka Silk Saree 02",
-    "brand": "Naini Hanvi Couture",
-    "category": "Matka Silk",
-    "price": 3450,
-    "inStock": true,
-    "isBestSeller": false,
-    "badge": null,
-    "fabric": "Matka Silk",
-    "lengthWidth": "5.5 meters, 1.1 meters width",
-    "blouseDetail": "Unstitched blouse piece included (0.8m)",
-    "description": "An elegant Matka Silk saree featuring a beautifully textured body and intricate borders. Lightweight, comfortable, and perfect for ethnic occasions.",
-    "gallery": [
-      {
-        "type": "image",
-        "src": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
-        "thumbnail": "/catalog/matka-silk/matka-silk-saree-02-img1.webp",
-        "alt": "Matka Silk Saree 02 - View 1"
-      }
-    ],
-    "variants": [],
-    "tags": [],
-    "sourceFiles": [
-      "IMG_6223.HEIC"
-    ],
-    "selectionReason": [
-      "IMG_6223.HEIC: converted to sRGB WebP"
     ],
     "matchedVideo": null
   },

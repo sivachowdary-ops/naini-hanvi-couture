@@ -177,11 +177,7 @@ INSERT INTO public.products (
 ),
 (
   'prod-50', 'matka-silk-saree-01', 'Matka Silk Saree 01', 'Naini Hanvi Couture', 'Matka Silk', 3250, NULL, true, false,
-  NULL, 'Matka Silk', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A premium Matka Silk saree featuring rich woven texture with traditional motifs and a contrasting border. Exquisite handloom quality from Naini Hanvi Couture.', '[{"type":"image","src":"/catalog/matka-silk/matka-silk-saree-01-img1.webp","thumbnail":"/catalog/matka-silk/matka-silk-saree-01-img1.webp","alt":"Matka Silk Saree 01 - View 1"},{"type":"image","src":"/catalog/matka-silk/matka-silk-saree-01-img2.webp","thumbnail":"/catalog/matka-silk/matka-silk-saree-01-img2.webp","alt":"Matka Silk Saree 01 - View 2"}]'::jsonb, '[]'::jsonb, '{}'::text[]
-),
-(
-  'prod-51', 'matka-silk-saree-02', 'Matka Silk Saree 02', 'Naini Hanvi Couture', 'Matka Silk', 3450, NULL, true, false,
-  NULL, 'Matka Silk', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'An elegant Matka Silk saree featuring a beautifully textured body and intricate borders. Lightweight, comfortable, and perfect for ethnic occasions.', '[{"type":"image","src":"/catalog/matka-silk/matka-silk-saree-02-img1.webp","thumbnail":"/catalog/matka-silk/matka-silk-saree-02-img1.webp","alt":"Matka Silk Saree 02 - View 1"}]'::jsonb, '[]'::jsonb, '{}'::text[]
+  NULL, 'Matka Silk', '5.5 meters, 1.1 meters width', 'Unstitched blouse piece included (0.8m)', 'A premium Matka Silk saree featuring rich woven texture with traditional motifs and a contrasting border. Exquisite handloom quality from Naini Hanvi Couture.', '[{"type":"image","src":"/catalog/matka-silk/matka-silk-saree-02-img1.webp","thumbnail":"/catalog/matka-silk/matka-silk-saree-02-img1.webp","alt":"Matka Silk Saree 01 - View 1"},{"type":"image","src":"/catalog/matka-silk/matka-silk-saree-01-img2.webp","thumbnail":"/catalog/matka-silk/matka-silk-saree-01-img2.webp","alt":"Matka Silk Saree 01 - View 2"}]'::jsonb, '[]'::jsonb, '{}'::text[]
 ),
 (
   'prod-52', 'pocket-sequins-mulberry-saree-01', 'Pocket Sequins Mulberry Saree 01', 'Naini Hanvi Couture', 'Pocket Sequins Mulberry', 4250, NULL, true, false,
